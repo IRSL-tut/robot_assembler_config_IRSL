@@ -6775,7 +6775,6 @@ PartsSettings:
         translation: [ 8.0, 48.0, -1.6 ]
         box: [ 16.0, 96.0, 3.2 ]
     mass-param:
-    mass-param:
       mass: 6.340608000000001
       center-of-mass: [8.0, 48.0, -1.6]
       inertia-tensor: [4874.997596160001, 0.0, 0.0, 0.0, 140.67695616000003, 0.0, 0.0, 0.0, 5004.853248000001]
@@ -7492,7 +7491,6 @@ PartsSettings:
       -
         translation: [ 12.0, 12.0, -1.6 ]
         box: [ 24.0, 24.0, 3.2 ]
-    mass-param:
     mass-param:
       mass: 2.3777280000000003
       center-of-mass: [12.0, 12.0, -1.6]
