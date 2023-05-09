@@ -210,22 +210,22 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/XL-430_m.stl"
-        scale : 1
+        url: "meshes_xseries/XL-430_mm.stl"
+        scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes_xseries/XL-430_m.stl"
-        scale : 1
+        url: "meshes_xseries/XL-430_mm.stl"
+        scale : 0.001
     mass-param:
-      mass: 1
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 57.0
+      center-of-mass: [0.41966054, -15.387220, 17.474305]
+      inertia-tensor: [1.5493772e+04, -1.7514579e+02, -4.8111620e+01, -1.7514579e+02, 8.2528518e+03, -8.4924409e+02, -4.8111620e+01, -8.4924409e+02, 1.3741272e+04]
     actuators:
       -
         name: horn
         types: [ROTOR_X]
-        translation: [0.0, 0.0, 19.0]
+        translation: [0.0, 0.0, 0.0]
         rotation: [1.0, 0.0, 0.0, 0.0]
         actuator-type: rotational
         axis: z
@@ -234,32 +234,32 @@ PartsSettings:
     -
         name: right-side
         types: [SERVO_BSIDE_X]
-        translation: [11.0, -32.0, 17.0]
+        translation: [11.0, -32.0, -2.0]
         rotation: [0.0, 0.0, 1.0, 180.0]
     -
         name: left-side
         types: [SERVO_BSIDE_X]
-        translation: [-11.0, 8.0, 17.0]
+        translation: [-11.0, 8.0, -2.0]
         rotation: [1.0, 0.0, 0.0, 0.0]
     -
         name: bottom-side1
         types: [SERVO_ASIDE_X]
-        translation: [-11.0, -32.0, 17.0]
+        translation: [-11.0, -32.0, -2.0]
         rotation: [0.0, 0.0, 1.0, 90.0]
     -
         name: bottom-side2
         types: [SERVO_BSIDE_X, SERVO_CSIDE_X]
-        translation: [11.0, 8.0, -17.0]
+        translation: [11.0, 8.0, -36.0]
         rotation: [0.0, 1.0, 0.0, 180.0]
     -
         name: bottom-side3
         types: [SERVO_ASIDE_X]
-        translation: [11.0, -32.0, -17.0]
+        translation: [11.0, -32.0, -36.0]
         rotation: [0.707, 0.707, 0.0, 180.0]
     -
         name: left-side2
         types: [SERVO_BSIDE_X, SERVO_CSIDE_X]
-        translation: [-11.0, -32.0, -17.0]
+        translation: [-11.0, -32.0, -36.0]
         rotation: [1.0, 0.0, 0.0, 180.0]
   -
     type: FR12_S102
@@ -277,9 +277,9 @@ PartsSettings:
         url: "meshes_xseries/fr12_s102_m.stl"
         scale : 1
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 5.695
+      center-of-mass: [-6.586E-05, 0.00, 17.445]
+      inertia-tensor: [443.25, -2.374E-1, 0.00, -2.374E-1, 1268.32, 0.0, 0.00, 0.0, 1577.09]
     connecting-points :
     -
         name: side_connetct_point
@@ -312,9 +312,9 @@ PartsSettings:
         url: "meshes_xseries/fr12_s102_p_m.stl"
         scale : 1
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 9.852
+      center-of-mass: [0.00, 0.00, 19.584]
+      inertia-tensor: [699.94, 0.0, 6.952E-1, 0.0, 1667.40, 0.0, 6.952E-1, 0.0, 2086.847]
     connecting-points :
     -
         name: side_connetct_point
@@ -402,9 +402,9 @@ PartsSettings:
         url: "meshes_xseries/fr12_s102_s_m.stl"
         scale : 1
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 7.134
+      center-of-mass: [0.00, 0.00, 18.259]
+      inertia-tensor: [536.68, 0.0, 7.301E-1, 0.0, 1407.77, 0.0, 7.301E-1, 0.0, 1764.025]
     connecting-points :
     -
         name: side_connetct_point
@@ -492,9 +492,9 @@ PartsSettings:
         url: "meshes_xseries/fr12_h101_plug_m.stl"
         scale : 1
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.98, 3.347E-0, 6.339E-0, 3.347E-0, 4457.94, 7.402E-0, 6.339E-0, 7.402E-0, 4839.383]
     connecting-points :
     -
         name: side_connetct_point
@@ -577,9 +577,9 @@ PartsSettings:
         url: "meshes_xseries/fr12_h101_socket_m.stl"
         scale : 1
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 11.677
+      center-of-mass: [5.299E-07, 21.047, -1.893E-09]
+      inertia-tensor: [1826.29, 2.118E-0, 6.336E-0, 2.118E-0, 4135.11, 2.322E-0, 6.336E-0, 2.322E-0, 4381.329]
     connecting-points :
     -
         name: side_connetct_point
@@ -662,9 +662,9 @@ PartsSettings:
         url: "meshes_xseries/fr12_s101_socket_mm.stl"
         scale : 0.001
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 11.061
+      center-of-mass: [-5.209E-07, -12.00, 18.452]
+      inertia-tensor: [2007.76, 0.0, -1.523E-0, 0.0, 2166.76, 5.869E-0, -1.523E-0, 5.869E-0, 3977.501]
     connecting-points :
     -
       name: connetct_point
@@ -817,9 +817,9 @@ PartsSettings:
         url: "meshes_xseries/fr12_s101_plug_mm.stl"
         scale : 0.001
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 10.885
+      center-of-mass: [-5.314E-07, -12.00, 18.374]
+      inertia-tensor: [1948.51, 0.0, -1.470E-0, 0.0, 2107.52, 6.624E-0, -1.470E-0, 6.624E-0, 3867.214]
     connecting-points :
     -
       name: connetct_point
@@ -972,9 +972,9 @@ PartsSettings:
         url: "meshes_xseries/omni_wheel_shaft_m.stl"
         scale : 1
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 5.733
+      center-of-mass: [-0.018, 0.017, 12.915]
+      inertia-tensor: [592.4, 0.43, 0.65, 0.43, 592.4, -0.63, 0.65, -0.63, 183.964]
     connecting-points :
     -
         name: connetct_point
@@ -1002,9 +1002,9 @@ PartsSettings:
         url: "meshes_xseries/fr12_h103_plug_m.stl"
         scale : 1
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 20.328
+      center-of-mass: [4.348E-07, 39.028, -5.914E-08]
+      inertia-tensor: [8473.50, -3.180E-0, -1.635E-0, -3.180E-0, 7343.55, 2.131E-0, -1.635E-0, 2.131E-0, 13245.482]
     connecting-points :
     -
         name: side_connetct_point
@@ -1087,9 +1087,9 @@ PartsSettings:
         url: "meshes_xseries/fr12_h103_socket_m.stl"
         scale : 1
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 17.609
+      center-of-mass: [3.623E-07, 36.089, -2.295E-08]
+      inertia-tensor: [7218.64, 0.0, 7.969E-0, 0.0, 7020.73, 7.555E-0, 7.969E-0, 7.555E-0, 11894.244]
     connecting-points :
     -
         name: side_connetct_point
@@ -1172,9 +1172,9 @@ PartsSettings:
         url: "meshes_xseries/bottom_mounter_mm.stl"
         scale : 0.001
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 6.134
+      center-of-mass: [-4.021E-09, -12.00, 1.319]
+      inertia-tensor: [1103.50, 1.972E-0, 9.333E-0, 1.972E-0, 442.6, -6.734E-0, 9.333E-0, -6.734E-0, 1517.452]
     connecting-points :
     -
         name: connetct_point
@@ -1240,9 +1240,9 @@ PartsSettings:
         url: "meshes_xseries/fixed_finger.stl"
         scale : 0.001
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 26.872
+      center-of-mass: [0.00, 8.771, 7.106]
+      inertia-tensor: [26117.61, 0.24, -0.3, 0.24, 24253.30, 5836.7, -0.3, 5836.7, 10411.942]
     connecting-points :
     -
         name: side_connetct_point1
@@ -1363,9 +1363,9 @@ PartsSettings:
         url: "meshes_xseries/moveable_finger.stl"
         scale : 0.001
     mass-param:
-      mass: 1.0
-      center-of-mass: [0.0, 0.0, 0.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      mass: 23.959
+      center-of-mass: [-0.001, 11.971, 37.728]
+      inertia-tensor: [20923.64, 0.0, -1.21, 0.0, 23935.56, -6014.86, -1.21, -6014.86, 11019.589]
     connecting-points :
     -
         name: horn
@@ -2493,9 +2493,9 @@ PartsSettings:
         url: "meshes/sensor-mounter_m.stl"
         scale : 1
     mass-param:
-      mass: 2.945
+      mass: 3.584
       center-of-mass: [11.901, 11.901, 5.658 ]
-      inertia-tensor: [680.49, -417.049, -198.27, -417.049, 688.702, -198.273, -198.27, -198.273, 1115.736]
+      inertia-tensor: [205.85, 0.02, 0.00, 0.02, 215.86, 0.00, 0.00, 0.00, 342.697]
     connecting-points :
     -
       name: lego-2p
@@ -2666,9 +2666,9 @@ PartsSettings:
         url: "meshes/grove_sensor_mounter_m.stl"
         scale : 1
     mass-param:
-      mass: 2.945
-      center-of-mass: [11.901, 11.901, 5.658 ]
-      inertia-tensor: [680.49, -417.049, -198.27, -417.049, 688.702, -198.273, -198.27, -198.273, 1115.736]
+      mass: 6.297
+      center-of-mass: [0.00, 0.00, 9.438]
+      inertia-tensor: [421.81, 1.013E-0, 0.00, 1.013E-0, 423.64, 0.00, 0.00, 0.00, 650.882]
     connecting-points :
     -
       name: s1_0_0
@@ -3363,9 +3363,9 @@ PartsSettings:
         url: "meshes/vehicle_base_pp_r1_mm.stl"
         scale : 0.001
     mass-param:
-      mass: 22.675
-      center-of-mass: [0, 0, 1.784]
-      inertia-tensor: [15425.152, 0.00, 1.006e-09, 0.00, 15425.152, 0.00, 1.006e-09, 0.00, 30794.825]
+      mass: 33.714
+      center-of-mass: [1.368E-10, 0.00, 1.60]
+      inertia-tensor: [21165.13, 1.364E-0, 0.0, 1.364E-0, 21165.13, 3.115E-0, 0.0, 3.115E-0, 42213.739]
     connecting-points :
     -
       name: p1_0_5_1
@@ -4074,9 +4074,9 @@ PartsSettings:
         url: "meshes/vehicle_base_ps_mm.stl"
         scale : 0.001
     mass-param:
-      mass: 1.0
-      center-of-mass: [0 , 0 , 0 ]
-      inertia-tensor: [1,0,0,0,1,0,0,0,1]
+      mass: 22.869
+      center-of-mass: [1.499E-10, 0.00, 2.576]
+      inertia-tensor: [17856.11, 5.720E-1, 1.173E-0, 5.720E-1, 17856.11, -1.392E-1, 1.173E-0, -1.392E-1, 35651.324]
     connecting-points :
     -
       name: p1_0_3_1
@@ -5417,9 +5417,9 @@ PartsSettings:
         url: "meshes/omni_wheel_m.stl"
         scale : 1
     mass-param:
-      mass: 1.0
-      center-of-mass: [0 , 0 , 0 ]
-      inertia-tensor: [1,0,0,0,1,0,0,0,1]
+      mass: 54.797
+      center-of-mass: [2.725E-09, 0.00, 12.55]
+      inertia-tensor: [11266.82, 0.0, -1.582E-0, 0.0, 11266.82, 0.0, -1.582E-0, 0.0, 16802.975]
     connecting-points :
     -
       name: omni_wheel
@@ -5441,9 +5441,9 @@ PartsSettings:
         url: "meshes/angle_2x2_m.stl"
         scale : 1
     mass-param:
-      mass: 1.0
-      center-of-mass: [0 , 0 , 0 ]
-      inertia-tensor: [1,0,0,0,1,0,0,0,1]
+      mass: 1.889
+      center-of-mass: [3.847E-10, -6.958, 7.922]
+      inertia-tensor: [116.91, -1.913E-1, 4.476E-0, -1.913E-1, 102.81, 33.69, 4.476E-0, 33.69, 96.478]
     connecting-points :
     -
       name: s_0_0
@@ -5500,9 +5500,9 @@ PartsSettings:
         url: "meshes/plate_2x2_pp_m.stl"
         scale : 1
     mass-param:
-      mass: 1.0
-      center-of-mass: [0 , 0 , 0 ]
-      inertia-tensor: [1,0,0,0,1,0,0,0,1]
+      mass: 1.395
+      center-of-mass: [0.00, 0.00, 0.00]
+      inertia-tensor: [31.10, 0.0, 2.384E-1, 0.0, 31.10, 0.0, 2.384E-1, 0.0, 55.688]
     connecting-points :
     -
       name: p_0_0
@@ -5558,9 +5558,9 @@ PartsSettings:
         url: "meshes/diagonal_bracket_mm.stl"
         scale : 0.001
     mass-param:
-      mass: 1.0
-      center-of-mass: [0 , 0 , 0 ]
-      inertia-tensor: [1,0,0,0,1,0,0,0,1]
+      mass: 1.772
+      center-of-mass: [0.168, -0.168, 8.231]
+      inertia-tensor: [84.78, -11.31, -0.88, -11.31, 84.78, 0.88, -0.88, 0.88, 54.527]
     connecting-points :
     -
       name: s_0_0
@@ -5614,9 +5614,9 @@ PartsSettings:
         translation: [ 4.0, 4.0, -1.6 ]
         box: [ 8.0, 8.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 0.264192
       center-of-mass: [4.0, 4.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [1.6344678400000001, 0.0, 0.0,  0.0, 1.6344678400000001, 0.0,  0.0, 0.0, 2.8180479999999997]
     connecting-points:
       -
         name: PL1_0_0
@@ -5637,9 +5637,9 @@ PartsSettings:
         translation: [ 4.0, 8.0, -1.6 ]
         box: [ 8.0, 16.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 0.528384
       center-of-mass: [4.0, 8.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [11.72307968, 0.0, 0.0,  0.0, 3.2689356800000002, 0.0,  0.0, 0.0, 14.09024]
     connecting-points:
       -
         name: PL1_0_0
@@ -5668,9 +5668,9 @@ PartsSettings:
         translation: [ 4.0, 12.0, -1.6 ]
         box: [ 8.0, 24.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 0.7925760000000002
       center-of-mass: [4.0, 12.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [38.71997952000001, 0.0, 0.0, 0.0, 4.903403520000002, 0.0, 0.0, 0.0, 42.27072000000001]
     connecting-points:
       -
         name: PL1_0_0
@@ -5707,9 +5707,9 @@ PartsSettings:
         translation: [ 4.0, 16.0, -1.6 ]
         box: [ 8.0, 32.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 1.056768
       center-of-mass: [4.0, 16.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [91.07931136, 0.0, 0.0, 0.0, 6.5378713600000005, 0.0, 0.0, 0.0, 95.81363199999998]
     connecting-points:
       -
         name: PL1_0_0
@@ -5754,9 +5754,9 @@ PartsSettings:
         translation: [ 4.0, 20.0, -1.6 ]
         box: [ 8.0, 40.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 1.3209600000000001
       center-of-mass: [4.0, 20.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [177.25521920000003, 0.0, 0.0, 0.0, 8.172339200000001, 0.0, 0.0, 0.0, 183.17312]
     connecting-points:
       -
         name: PL1_0_0
@@ -5809,9 +5809,9 @@ PartsSettings:
         translation: [ 4.0, 24.0, -1.6 ]
         box: [ 8.0, 48.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 1.5851520000000003
       center-of-mass: [4.0, 24.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [305.70184704, 0.0, 0.0, 0.0, 9.806807040000004, 0.0, 0.0, 0.0, 312.8033280000001]
     connecting-points:
       -
         name: PL1_0_0
@@ -5872,9 +5872,9 @@ PartsSettings:
         translation: [ 4.0, 32.0, -1.6 ]
         box: [ 8.0, 64.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 2.113536
       center-of-mass: [4.0, 32.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [723.2238387199999, 0.0, 0.0, 0.0, 13.075742720000001, 0.0, 0.0, 0.0, 732.69248]
     connecting-points:
       -
         name: PL1_0_0
@@ -5951,9 +5951,9 @@ PartsSettings:
         translation: [ 4.0, 40.0, -1.6 ]
         box: [ 8.0, 80.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 2.6419200000000003
       center-of-mass: [4.0, 40.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [1411.2784384, 0.0, 0.0, 0.0, 16.344678400000003, 0.0, 0.0, 0.0, 1423.11424]
     connecting-points:
       -
         name: PL1_0_0
@@ -6046,9 +6046,9 @@ PartsSettings:
         translation: [ 4.0, 48.0, -1.6 ]
         box: [ 8.0, 96.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 3.1703040000000007
       center-of-mass: [4.0, 48.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [2437.4987980800006, 0.0, 0.0, 0.0, 19.61361408000001, 0.0, 0.0, 0.0, 2451.7017600000004]
     connecting-points:
       -
         name: PL1_0_0
@@ -6157,9 +6157,9 @@ PartsSettings:
         translation: [ 8.0, 8.0, -1.6 ]
         box: [ 16.0, 16.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 1.056768
       center-of-mass: [8.0, 8.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [23.44615936, 0.0, 0.0, 0.0, 23.44615936, 0.0, 0.0, 0.0, 45.088767999999995]
     connecting-points:
       -
         name: PL1_0_0
@@ -6204,9 +6204,9 @@ PartsSettings:
         translation: [ 8.0, 12.0, -1.6 ]
         box: [ 16.0, 24.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 1.5851520000000003
       center-of-mass: [8.0, 12.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [77.43995904000002, 0.0, 0.0, 0.0, 35.16923904000001, 0.0, 0.0, 0.0, 109.90387200000002]
     connecting-points:
       -
         name: PL1_0_0
@@ -6267,9 +6267,9 @@ PartsSettings:
         translation: [ 8.0, 16.0, -1.6 ]
         box: [ 16.0, 32.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 2.113536
       center-of-mass: [8.0, 16.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [182.15862272, 0.0, 0.0, 0.0, 46.89231872, 0.0, 0.0, 0.0, 225.44384]
     connecting-points:
       -
         name: PL1_0_0
@@ -6346,9 +6346,9 @@ PartsSettings:
         translation: [ 8.0, 24.0, -1.6 ]
         box: [ 16.0, 48.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 3.1703040000000007
       center-of-mass: [8.0, 24.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [611.40369408, 0.0, 0.0, 0.0, 70.33847808000002, 0.0, 0.0, 0.0, 676.3315200000002]
     connecting-points:
       -
         name: PL1_0_0
@@ -6457,9 +6457,9 @@ PartsSettings:
         translation: [ 8.0, 32.0, -1.6 ]
         box: [ 16.0, 64.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 4.227072
       center-of-mass: [8.0, 32.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [1446.4476774399998, 0.0, 0.0, 0.0, 93.78463744, 0.0, 0.0, 0.0, 1533.0181119999997]
     connecting-points:
       -
         name: PL1_0_0
@@ -6600,9 +6600,9 @@ PartsSettings:
         translation: [ 8.0, 40.0, -1.6 ]
         box: [ 16.0, 80.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 5.2838400000000005
       center-of-mass: [8.0, 40.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [2822.5568768, 0.0, 0.0, 0.0, 117.23079680000001, 0.0, 0.0, 0.0, 2930.76992]
     connecting-points:
       -
         name: PL1_0_0
@@ -6775,9 +6775,9 @@ PartsSettings:
         translation: [ 8.0, 48.0, -1.6 ]
         box: [ 16.0, 96.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 6.340608000000001
       center-of-mass: [8.0, 48.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [4874.997596160001, 0.0, 0.0, 0.0, 140.67695616000003, 0.0, 0.0, 0.0, 5004.853248000001]
     connecting-points:
       -
         name: PL1_0_0
@@ -6982,9 +6982,9 @@ PartsSettings:
         translation: [ 8.0, 56.0, -1.6 ]
         box: [ 16.0, 112.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 7.397376000000001
       center-of-mass: [8.0, 56.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [7739.036139520002, 0.0, 0.0, 0.0, 164.12311552000003, 0.0, 0.0, 0.0, 7890.534400000001]
     connecting-points:
       -
         name: PL1_0_0
@@ -7221,9 +7221,9 @@ PartsSettings:
         translation: [ 8.0, 64.0, -1.6 ]
         box: [ 16.0, 128.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 8.454144
       center-of-mass: [8.0, 64.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [11549.93881088, 0.0, 0.0, 0.0, 187.56927488, 0.0, 0.0, 0.0, 11723.07968]
     connecting-points:
       -
         name: PL1_0_0
@@ -7492,9 +7492,9 @@ PartsSettings:
         translation: [ 12.0, 12.0, -1.6 ]
         box: [ 24.0, 24.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 2.3777280000000003
       center-of-mass: [12.0, 12.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [116.15993856000001, 0.0, 0.0, 0.0, 116.15993856000001, 0.0, 0.0, 0.0, 228.26188800000003]
     connecting-points:
       -
         name: PL1_0_0
@@ -7579,9 +7579,9 @@ PartsSettings:
         translation: [ 16.0, 16.0, -1.6 ]
         box: [ 32.0, 32.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 4.227072
       center-of-mass: [16.0, 16.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [364.31724544, 0.0, 0.0, 0.0, 364.31724544, 0.0, 0.0, 0.0, 721.4202879999999]
     connecting-points:
       -
         name: PL1_0_0
@@ -7722,9 +7722,9 @@ PartsSettings:
         translation: [ 16.0, 24.0, -1.6 ]
         box: [ 32.0, 48.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 6.340608000000001
       center-of-mass: [16.0, 24.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [1222.80738816, 0.0, 0.0, 0.0, 546.4758681600001, 0.0, 0.0, 0.0, 1758.4619520000003]
     connecting-points:
       -
         name: PL1_0_0
@@ -7929,9 +7929,9 @@ PartsSettings:
         translation: [ 16.0, 32.0, -1.6 ]
         box: [ 32.0, 64.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 8.454144
       center-of-mass: [16.0, 32.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [2892.8953548799996, 0.0, 0.0, 0.0, 728.63449088, 0.0, 0.0, 0.0, 3607.10144]
     connecting-points:
       -
         name: PL1_0_0
@@ -8200,9 +8200,9 @@ PartsSettings:
         translation: [ 16.0, 40.0, -1.6 ]
         box: [ 32.0, 80.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 10.567680000000001
       center-of-mass: [16.0, 40.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [5645.1137536, 0.0, 0.0, 0.0, 910.7931136000001, 0.0, 0.0, 0.0, 6537.871360000001]
     connecting-points:
       -
         name: PL1_0_0
@@ -8535,9 +8535,9 @@ PartsSettings:
         translation: [ 16.0, 48.0, -1.6 ]
         box: [ 32.0, 96.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 12.681216000000003
       center-of-mass: [16.0, 48.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [9749.995192320002, 0.0, 0.0, 0.0, 1092.9517363200002, 0.0, 0.0, 0.0, 10821.304320000003]
     connecting-points:
       -
         name: PL1_0_0
@@ -8934,9 +8934,9 @@ PartsSettings:
         translation: [ 24.0, 24.0, -1.6 ]
         box: [ 48.0, 48.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 9.510912000000001
       center-of-mass: [24.0, 24.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [1834.21108224, 0.0, 0.0, 0.0, 1834.21108224, 0.0, 0.0, 0.0, 3652.1902080000004]
     connecting-points:
       -
         name: PL1_0_0
@@ -9237,9 +9237,9 @@ PartsSettings:
         translation: [ 24.0, 32.0, -1.6 ]
         box: [ 48.0, 64.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 12.681216000000003
       center-of-mass: [24.0, 32.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [4339.343032320001, 0.0, 0.0, 0.0, 2445.61477632, 0.0, 0.0, 0.0, 6763.315200000001]
     connecting-points:
       -
         name: PL1_0_0
@@ -9636,9 +9636,9 @@ PartsSettings:
         translation: [ 24.0, 40.0, -1.6 ]
         box: [ 48.0, 80.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 15.85152
       center-of-mass: [24.0, 40.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [8467.6706304, 0.0, 0.0, 0.0, 3057.0184704, 0.0, 0.0, 0.0, 11497.63584]
     connecting-points:
       -
         name: PL1_0_0
@@ -10131,9 +10131,9 @@ PartsSettings:
         translation: [ 24.0, 48.0, -1.6 ]
         box: [ 48.0, 96.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 19.021824000000002
       center-of-mass: [24.0, 48.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [14624.99278848, 0.0, 0.0, 0.0, 3668.42216448, 0.0, 0.0, 0.0, 18260.951040000004]
     connecting-points:
       -
         name: PL1_0_0
@@ -10722,9 +10722,9 @@ PartsSettings:
         translation: [ 24.0, 56.0, -1.6 ]
         box: [ 48.0, 112.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 22.192128
       center-of-mass: [24.0, 56.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [23217.10841856, 0.0, 0.0, 0.0, 4279.82585856, 0.0, 0.0, 0.0, 27459.059712000002]
     connecting-points:
       -
         name: PL1_0_0
@@ -11409,9 +11409,9 @@ PartsSettings:
         translation: [ 24.0, 64.0, -1.6 ]
         box: [ 48.0, 128.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 25.362432000000005
       center-of-mass: [24.0, 64.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [34649.81643264001, 0.0, 0.0, 0.0, 4891.22955264, 0.0, 0.0, 0.0, 39497.76076800001]
     connecting-points:
       -
         name: PL1_0_0
@@ -12192,9 +12192,9 @@ PartsSettings:
         translation: [ 24.0, 96.0, -1.6 ]
         box: [ 48.0, 192.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 38.043648000000005
       center-of-mass: [24.0, 96.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [116902.55056896001, 0.0, 0.0, 0.0, 7336.84432896, 0.0, 0.0, 0.0, 124174.46707200001]
     connecting-points:
       -
         name: PL1_0_0
@@ -13359,9 +13359,9 @@ PartsSettings:
         translation: [ 32.0, 32.0, -1.6 ]
         box: [ 64.0, 64.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 16.908288
       center-of-mass: [32.0, 32.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [5785.790709759999, 0.0, 0.0, 0.0, 5785.790709759999, 0.0, 0.0, 0.0, 11542.724607999999]
     connecting-points:
       -
         name: PL1_0_0
@@ -13886,9 +13886,9 @@ PartsSettings:
         translation: [ 32.0, 64.0, -1.6 ]
         box: [ 64.0, 128.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 33.816576
       center-of-mass: [32.0, 64.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [46199.75524352, 0.0, 0.0, 0.0, 11571.581419519998, 0.0, 0.0, 0.0, 57713.62304]
     connecting-points:
       -
         name: PL1_0_0
@@ -14925,9 +14925,9 @@ PartsSettings:
         translation: [ 64.0, 64.0, -1.6 ]
         box: [ 128.0, 128.0, 3.2 ]
     mass-param:
-      mass: 1.0
+      mass: 67.633152
       center-of-mass: [64.0, 64.0, -1.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [92399.51048704, 0.0, 0.0, 0.0, 92399.51048704, 0.0, 0.0, 0.0, 184683.59372799998]
     connecting-points:
       -
         name: PL1_0_0
@@ -16988,9 +16988,9 @@ PartsSettings:
         translation: [ 4.0, 4.0, -4.8 ]
         box: [ 8.0, 8.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 0.7925760000000001
       center-of-mass: [4.0, 4.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [10.314055680000001, 0.0, 0.0, 0.0, 10.314055680000001, 0.0, 0.0, 0.0, 8.454144000000001]
     connecting-points:
       -
         name: PL1_0_0
@@ -17011,9 +17011,9 @@ PartsSettings:
         translation: [ 4.0, 8.0, -4.8 ]
         box: [ 8.0, 16.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 1.5851520000000001
       center-of-mass: [4.0, 8.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [45.990543360000004, 0.0, 0.0, 0.0, 20.628111360000002, 0.0, 0.0, 0.0, 42.270720000000004]
     connecting-points:
       -
         name: PL1_0_0
@@ -17042,9 +17042,9 @@ PartsSettings:
         translation: [ 4.0, 12.0, -4.8 ]
         box: [ 8.0, 24.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 2.3777279999999994
       center-of-mass: [4.0, 12.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [132.39189503999995, 0.0, 0.0, 0.0, 30.94216703999999, 0.0, 0.0, 0.0, 126.81215999999996]
     connecting-points:
       -
         name: PL1_0_0
@@ -17081,9 +17081,9 @@ PartsSettings:
         translation: [ 4.0, 16.0, -4.8 ]
         box: [ 8.0, 32.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 3.1703040000000002
       center-of-mass: [4.0, 16.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [294.88054272000005, 0.0, 0.0, 0.0, 41.256222720000004, 0.0, 0.0, 0.0, 287.440896]
     connecting-points:
       -
         name: PL1_0_0
@@ -17128,9 +17128,9 @@ PartsSettings:
         translation: [ 4.0, 24.0, -4.8 ]
         box: [ 8.0, 48.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 4.755455999999999
       center-of-mass: [4.0, 24.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [949.5694540799997, 0.0, 0.0, 0.0, 61.88433407999998, 0.0, 0.0, 0.0, 938.4099839999998]
     connecting-points:
       -
         name: PL1_0_0
@@ -17191,9 +17191,9 @@ PartsSettings:
         translation: [ 4.0, 32.0, -4.8 ]
         box: [ 8.0, 64.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 6.3406080000000005
       center-of-mass: [4.0, 32.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [2212.9567334400003, 0.0, 0.0, 0.0, 82.51244544000001, 0.0, 0.0, 0.0, 2198.07744]
     connecting-points:
       -
         name: PL1_0_0
@@ -17270,9 +17270,9 @@ PartsSettings:
         translation: [ 4.0, 40.0, -4.8 ]
         box: [ 8.0, 80.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 7.92576
       center-of-mass: [4.0, 40.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [4287.9418368, 0.0, 0.0, 0.0, 103.1405568, 0.0, 0.0, 0.0, 4269.34272]
     connecting-points:
       -
         name: PL1_0_0
@@ -17365,9 +17365,9 @@ PartsSettings:
         translation: [ 4.0, 48.0, -4.8 ]
         box: [ 8.0, 96.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 9.510911999999998
       center-of-mass: [4.0, 48.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [7377.424220159998, 0.0, 0.0, 0.0, 123.76866815999996, 0.0, 0.0, 0.0, 7355.105279999999]
     connecting-points:
       -
         name: PL1_0_0
@@ -17476,9 +17476,9 @@ PartsSettings:
         translation: [ 4.0, 64.0, -4.8 ]
         box: [ 8.0, 128.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 12.681216000000001
       center-of-mass: [4.0, 64.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [17411.47865088, 0.0, 0.0, 0.0, 165.02489088000002, 0.0, 0.0, 0.0, 17381.720064]
     connecting-points:
       -
         name: PL1_0_0
@@ -17619,9 +17619,9 @@ PartsSettings:
         translation: [ 8.0, 8.0, -4.8 ]
         box: [ 16.0, 16.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 3.1703040000000002
       center-of-mass: [8.0, 8.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [91.98108672000001, 0.0, 0.0, 0.0, 91.98108672000001, 0.0, 0.0, 0.0, 135.26630400000002]
     connecting-points:
       -
         name: PL1_0_0
@@ -17666,9 +17666,9 @@ PartsSettings:
         translation: [ 8.0, 12.0, -4.8 ]
         box: [ 16.0, 24.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 4.755455999999999
       center-of-mass: [8.0, 12.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [264.7837900799999, 0.0, 0.0, 0.0, 137.97163007999995, 0.0, 0.0, 0.0, 329.7116159999999]
     connecting-points:
       -
         name: PL1_0_0
@@ -17729,9 +17729,9 @@ PartsSettings:
         translation: [ 8.0, 16.0, -4.8 ]
         box: [ 16.0, 32.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 6.3406080000000005
       center-of-mass: [8.0, 16.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [589.7610854400001, 0.0, 0.0, 0.0, 183.96217344000002, 0.0, 0.0, 0.0, 676.3315200000001]
     connecting-points:
       -
         name: PL1_0_0
@@ -17808,9 +17808,9 @@ PartsSettings:
         translation: [ 8.0, 24.0, -4.8 ]
         box: [ 16.0, 48.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 9.510911999999998
       center-of-mass: [8.0, 24.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [1899.1389081599993, 0.0, 0.0, 0.0, 275.9432601599999, 0.0, 0.0, 0.0, 2028.9945599999994]
     connecting-points:
       -
         name: PL1_0_0
@@ -17919,9 +17919,9 @@ PartsSettings:
         translation: [ 8.0, 32.0, -4.8 ]
         box: [ 16.0, 64.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 12.681216000000001
       center-of-mass: [8.0, 32.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [4425.913466880001, 0.0, 0.0, 0.0, 367.92434688000003, 0.0, 0.0, 0.0, 4599.054336]
     connecting-points:
       -
         name: PL1_0_0
@@ -18062,9 +18062,9 @@ PartsSettings:
         translation: [ 8.0, 40.0, -4.8 ]
         box: [ 16.0, 80.0, 9.6 ]
     mass-param:
-      mass: 1.0
+      mass: 15.85152
       center-of-mass: [8.0, 40.0, -4.8]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [8575.8836736, 0.0, 0.0, 0.0, 459.9054336, 0.0, 0.0, 0.0, 8792.30976]
     connecting-points:
       -
         name: PL1_0_0
@@ -18237,9 +18237,9 @@ PartsSettings:
         translation: [ 4.0, 4.0, -14.4 ]
         box: [ 8.0, 8.0, 28.8 ]
     mass-param:
-      mass: 1.0
+      mass: 2.3777279999999994
       center-of-mass: [4.0, 4.0, -14.4]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [177.02977535999992, 0.0, 0.0, 0.0, 177.02977535999992, 0.0, 0.0, 0.0, 25.362431999999995]
     connecting-points:
       -
         name: PL1_0_0
@@ -18260,9 +18260,9 @@ PartsSettings:
         translation: [ 4.0, 4.0, -24.0 ]
         box: [ 8.0, 8.0, 48.0 ]
     mass-param:
-      mass: 1.0
+      mass: 3.96288
       center-of-mass: [4.0, 4.0, -24.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [782.00832, 0.0, 0.0, 0.0, 782.00832, 0.0, 0.0, 0.0, 42.270720000000004]
     connecting-points:
       -
         name: PL1_0_0
@@ -18283,9 +18283,9 @@ PartsSettings:
         translation: [ 4.0, 8.0, -9.6 ]
         box: [ 8.0, 16.0, 19.2 ]
     mass-param:
-      mass: 1.0
+      mass: 3.1703040000000002
       center-of-mass: [4.0, 8.0, -9.6]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [165.02489088000002, 0.0, 0.0, 0.0, 114.30002688, 0.0, 0.0, 0.0, 84.54144000000001]
     connecting-points:
       -
         name: PL1_0_0
@@ -18314,9 +18314,9 @@ PartsSettings:
         translation: [ 4.0, 8.0, -24.0 ]
         box: [ 8.0, 16.0, 48.0 ]
     mass-param:
-      mass: 1.0
+      mass: 7.92576
       center-of-mass: [4.0, 8.0, -24.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [1690.8288, 0.0, 0.0, 0.0, 1564.01664, 0.0, 0.0, 0.0, 211.3536]
     connecting-points:
       -
         name: PL1_0_0
@@ -18345,9 +18345,9 @@ PartsSettings:
         translation: [ 4.0, 12.0, -24.0 ]
         box: [ 8.0, 24.0, 48.0 ]
     mass-param:
-      mass: 1.0
+      mass: 11.888639999999999
       center-of-mass: [4.0, 12.0, -24.0]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [2853.2736, 0.0, 0.0, 0.0, 2346.0249599999997, 0.0, 0.0, 0.0, 634.0607999999999]
     connecting-points:
       -
         name: PL1_0_0
@@ -18384,9 +18384,9 @@ PartsSettings:
         translation: [ 4.0, 16.0, -14.4 ]
         box: [ 8.0, 32.0, 28.8 ]
     mass-param:
-      mass: 1.0
+      mass: 9.510911999999998
       center-of-mass: [4.0, 16.0, -14.4]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [1468.9920614399996, 0.0, 0.0, 0.0, 708.1191014399997, 0.0, 0.0, 0.0, 862.3226879999997]
     connecting-points:
       -
         name: PL1_0_0
@@ -18431,9 +18431,9 @@ PartsSettings:
         translation: [ 8.0, 8.0, -14.4 ]
         box: [ 16.0, 16.0, 28.8 ]
     mass-param:
-      mass: 1.0
+      mass: 9.510911999999998
       center-of-mass: [8.0, 8.0, -14.4]
-      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+      inertia-tensor: [860.2936934399996, 0.0, 0.0, 0.0, 860.2936934399996, 0.0, 0.0, 0.0, 405.7989119999999]
     connecting-points:
       -
         name: PL1_0_0
