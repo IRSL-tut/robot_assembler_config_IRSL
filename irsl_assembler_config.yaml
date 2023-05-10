@@ -219,7 +219,7 @@ PartsSettings:
         scale : 0.001
     mass-param:
       mass: 57.0
-      center-of-mass: [0.41966054, -15.387220, 17.474305]
+      center-of-mass: [0.41966054, -15.387220, -17.474305]
       inertia-tensor: [1.5493772e+04, -1.7514579e+02, -4.8111620e+01, -1.7514579e+02, 8.2528518e+03, -8.4924409e+02, -4.8111620e+01, -8.4924409e+02, 1.3741272e+04]
     actuators:
       -
@@ -279,7 +279,7 @@ PartsSettings:
     mass-param:
       mass: 5.695
       center-of-mass: [-6.586E-05, 0.00, 17.445]
-      inertia-tensor: [443.25, -2.374E-1, 0.00, -2.374E-1, 1268.32, 0.0, 0.00, 0.0, 1577.09]
+      inertia-tensor: [443.252, -2.374E-10, 0.00, -2.374E-10, 1268.324, 0.0, 0.00, 0.0, 1577.09]
     connecting-points :
     -
         name: side_connetct_point
@@ -314,7 +314,7 @@ PartsSettings:
     mass-param:
       mass: 9.852
       center-of-mass: [0.00, 0.00, 19.584]
-      inertia-tensor: [699.94, 0.0, 6.952E-1, 0.0, 1667.40, 0.0, 6.952E-1, 0.0, 2086.847]
+      inertia-tensor: [699.942, 0.0, 6.952E-10, 0.0, 1667.408, 0.0, 6.952E-10, 0.0, 2086.847]
     connecting-points :
     -
         name: side_connetct_point
@@ -404,7 +404,7 @@ PartsSettings:
     mass-param:
       mass: 7.134
       center-of-mass: [0.00, 0.00, 18.259]
-      inertia-tensor: [536.68, 0.0, 7.301E-1, 0.0, 1407.77, 0.0, 7.301E-1, 0.0, 1764.025]
+      inertia-tensor: [536.681, 0.0, 7.301E-10, 0.0, 1407.776, 0.0, 7.301E-10, 0.0, 1764.025]
     connecting-points :
     -
         name: side_connetct_point
@@ -494,7 +494,7 @@ PartsSettings:
     mass-param:
       mass: 14.395
       center-of-mass: [4.299E-07, 23.033, 0.00]
-      inertia-tensor: [2187.98, 3.347E-0, 6.339E-0, 3.347E-0, 4457.94, 7.402E-0, 6.339E-0, 7.402E-0, 4839.383]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
     connecting-points :
     -
         name: side_connetct_point
@@ -579,7 +579,7 @@ PartsSettings:
     mass-param:
       mass: 11.677
       center-of-mass: [5.299E-07, 21.047, -1.893E-09]
-      inertia-tensor: [1826.29, 2.118E-0, 6.336E-0, 2.118E-0, 4135.11, 2.322E-0, 6.336E-0, 2.322E-0, 4381.329]
+      inertia-tensor: [1826.299, 2.118E-05, 6.336E-09, 2.118E-05, 4135.119, 2.322E-07, 6.336E-09, 2.322E-07, 4381.329]
     connecting-points :
     -
         name: side_connetct_point
@@ -664,7 +664,7 @@ PartsSettings:
     mass-param:
       mass: 11.061
       center-of-mass: [-5.209E-07, -12.00, 18.452]
-      inertia-tensor: [2007.76, 0.0, -1.523E-0, 0.0, 2166.76, 5.869E-0, -1.523E-0, 5.869E-0, 3977.501]
+      inertia-tensor: [2007.761, 0.0, -1.523E-05, 0.0, 2166.766, 5.869E-07, -1.523E-05, 5.869E-07, 3977.501]
     connecting-points :
     -
       name: connetct_point
@@ -819,7 +819,7 @@ PartsSettings:
     mass-param:
       mass: 10.885
       center-of-mass: [-5.314E-07, -12.00, 18.374]
-      inertia-tensor: [1948.51, 0.0, -1.470E-0, 0.0, 2107.52, 6.624E-0, -1.470E-0, 6.624E-0, 3867.214]
+      inertia-tensor: [1948.516, 0.0, -1.470E-05, 0.0, 2107.521, 6.624E-07, -1.470E-05, 6.624E-07, 3867.214]
     connecting-points :
     -
       name: connetct_point
@@ -974,7 +974,7 @@ PartsSettings:
     mass-param:
       mass: 5.733
       center-of-mass: [-0.018, 0.017, 12.915]
-      inertia-tensor: [592.4, 0.43, 0.65, 0.43, 592.4, -0.63, 0.65, -0.63, 183.964]
+      inertia-tensor: [592.43, 0.436, 0.657, 0.436, 592.46, -0.635, 0.657, -0.635, 183.964]
     connecting-points :
     -
         name: connetct_point
@@ -1004,7 +1004,7 @@ PartsSettings:
     mass-param:
       mass: 20.328
       center-of-mass: [4.348E-07, 39.028, -5.914E-08]
-      inertia-tensor: [8473.50, -3.180E-0, -1.635E-0, -3.180E-0, 7343.55, 2.131E-0, -1.635E-0, 2.131E-0, 13245.482]
+      inertia-tensor: [8473.508, -3.180E-05, -1.635E-05, -3.180E-05, 7343.559, 2.131E-06, -1.635E-05, 2.131E-06, 13245.482]
     connecting-points :
     -
         name: side_connetct_point
@@ -1089,7 +1089,7 @@ PartsSettings:
     mass-param:
       mass: 17.609
       center-of-mass: [3.623E-07, 36.089, -2.295E-08]
-      inertia-tensor: [7218.64, 0.0, 7.969E-0, 0.0, 7020.73, 7.555E-0, 7.969E-0, 7.555E-0, 11894.244]
+      inertia-tensor: [7218.641, 0.0, 7.969E-09, 0.0, 7020.736, 7.555E-06, 7.969E-09, 7.555E-06, 11894.244]
     connecting-points :
     -
         name: side_connetct_point
@@ -1174,7 +1174,7 @@ PartsSettings:
     mass-param:
       mass: 6.134
       center-of-mass: [-4.021E-09, -12.00, 1.319]
-      inertia-tensor: [1103.50, 1.972E-0, 9.333E-0, 1.972E-0, 442.6, -6.734E-0, 9.333E-0, -6.734E-0, 1517.452]
+      inertia-tensor: [1103.505, 1.972E-07, 9.333E-08, 1.972E-07, 442.60, -6.734E-08, 9.333E-08, -6.734E-08, 1517.452]
     connecting-points :
     -
         name: connetct_point
@@ -1242,7 +1242,7 @@ PartsSettings:
     mass-param:
       mass: 26.872
       center-of-mass: [0.00, 8.771, 7.106]
-      inertia-tensor: [26117.61, 0.24, -0.3, 0.24, 24253.30, 5836.7, -0.3, 5836.7, 10411.942]
+      inertia-tensor: [26117.613, 0.244, -0.31, 0.244, 24253.304, 5836.77, -0.31, 5836.77, 10411.942]
     connecting-points :
     -
         name: side_connetct_point1
@@ -1365,7 +1365,7 @@ PartsSettings:
     mass-param:
       mass: 23.959
       center-of-mass: [-0.001, 11.971, 37.728]
-      inertia-tensor: [20923.64, 0.0, -1.21, 0.0, 23935.56, -6014.86, -1.21, -6014.86, 11019.589]
+      inertia-tensor: [20923.649, 0.09, -1.217, 0.09, 23935.566, -6014.869, -1.217, -6014.869, 11019.589]
     connecting-points :
     -
         name: horn
@@ -2495,7 +2495,7 @@ PartsSettings:
     mass-param:
       mass: 3.584
       center-of-mass: [11.901, 11.901, 5.658 ]
-      inertia-tensor: [205.85, 0.02, 0.00, 0.02, 215.86, 0.00, 0.00, 0.00, 342.697]
+      inertia-tensor: [205.856, 0.026, 0.003, 0.026, 215.866, 0.004, 0.003, 0.004, 342.697]
     connecting-points :
     -
       name: lego-2p
@@ -2668,7 +2668,7 @@ PartsSettings:
     mass-param:
       mass: 6.297
       center-of-mass: [0.00, 0.00, 9.438]
-      inertia-tensor: [421.81, 1.013E-0, 0.00, 1.013E-0, 423.64, 0.00, 0.00, 0.00, 650.882]
+      inertia-tensor: [421.815, 1.013E-07, 0.004, 1.013E-07, 423.644, 0.004, 0.004, 0.004, 650.882]
     connecting-points :
     -
       name: s1_0_0
@@ -4076,7 +4076,7 @@ PartsSettings:
     mass-param:
       mass: 22.869
       center-of-mass: [1.499E-10, 0.00, 2.576]
-      inertia-tensor: [17856.11, 5.720E-1, 1.173E-0, 5.720E-1, 17856.11, -1.392E-1, 1.173E-0, -1.392E-1, 35651.324]
+      inertia-tensor: [17856.117, 5.720E-10, 1.173E-09, 5.720E-10, 17856.117, -1.392E-10, 1.173E-09, -1.392E-10, 35651.324]
     connecting-points :
     -
       name: p1_0_3_1
@@ -5419,7 +5419,7 @@ PartsSettings:
     mass-param:
       mass: 54.797
       center-of-mass: [2.725E-09, 0.00, 12.55]
-      inertia-tensor: [11266.82, 0.0, -1.582E-0, 0.0, 11266.82, 0.0, -1.582E-0, 0.0, 16802.975]
+      inertia-tensor: [11266.825, 0.0, -1.582E-09, 0.0, 11266.827, 0.0, -1.582E-09, 0.0, 16802.975]
     connecting-points :
     -
       name: omni_wheel
@@ -5443,7 +5443,7 @@ PartsSettings:
     mass-param:
       mass: 1.889
       center-of-mass: [3.847E-10, -6.958, 7.922]
-      inertia-tensor: [116.91, -1.913E-1, 4.476E-0, -1.913E-1, 102.81, 33.69, 4.476E-0, 33.69, 96.478]
+      inertia-tensor: [116.911, -1.913E-10, 4.476E-09, -1.913E-10, 102.812, 33.696, 4.476E-09, 33.696, 96.478]
     connecting-points :
     -
       name: s_0_0
@@ -5502,7 +5502,7 @@ PartsSettings:
     mass-param:
       mass: 1.395
       center-of-mass: [0.00, 0.00, 0.00]
-      inertia-tensor: [31.10, 0.0, 2.384E-1, 0.0, 31.10, 0.0, 2.384E-1, 0.0, 55.688]
+      inertia-tensor: [31.101, 0.0, 2.384E-10, 0.0, 31.101, 0.0, 2.384E-10, 0.0, 55.688]
     connecting-points :
     -
       name: p_0_0
@@ -5560,7 +5560,7 @@ PartsSettings:
     mass-param:
       mass: 1.772
       center-of-mass: [0.168, -0.168, 8.231]
-      inertia-tensor: [84.78, -11.31, -0.88, -11.31, 84.78, 0.88, -0.88, 0.88, 54.527]
+      inertia-tensor: [84.782, -11.312, -0.882, -11.312, 84.782, 0.882, -0.882, 0.882, 54.527]
     connecting-points :
     -
       name: s_0_0
