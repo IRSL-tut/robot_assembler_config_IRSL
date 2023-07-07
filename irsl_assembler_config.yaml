@@ -220,6 +220,7 @@ PartsSettings:
         type: mesh
         url: "meshes_vis/x_series/XL-430_mm.stl"
         scale : 0.001
+        color: [0.15, 0.15, 0.15]
     collision:
       -
         type: mesh
