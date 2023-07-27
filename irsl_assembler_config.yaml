@@ -135,7 +135,7 @@ ConnectingConstraintSettings:
 PanelSettings: ## just for choreonoid
   tab_list:
     - name: Servo Parts (X-series)
-      parts: [XL-430, SHORT_FRAME, SHORT_FRAME_PLUG, SHORT_FRAME_SOCKET, LONG_FRAME_PLUG, LONG_FRAME_SOCKET, SHORT_HONE_PLUG, SHORT_HONE_SOCKET, BOTTOM_FRAME_PLUG, BOTTOM_FRAME_SOCKET]
+      parts: [XL-430, SHORT_FRAME, SHORT_FRAME_PLUG, SHORT_FRAME_SOCKET, LONG_FRAME_PLUG, LONG_FRAME_SOCKET, SHORT_HINGE_PLUG, SHORT_HINGE_SOCKET, BOTTOM_FRAME_PLUG, BOTTOM_FRAME_SOCKET]
     - name: Servo Parts (X-series) OLD
       parts: [XL-430, FR12_S102, FR12_S102_P, FR12_S102_S, FR12_S101_P, FR12_S101_S, Bottom_mounter, FR12_H101_P, FR12_H101_S, FR12_H103_P, FR12_H103_S, omni-shaft-x, Fixed_Finger, Moveable_Finger]
     - name : Vehicle Parts
@@ -537,7 +537,7 @@ PartsSettings:
       translation: [14.0., -44.25, 12.0]
       rotation: [1., 0., 0., -90.0]
   -
-    type: SHORT_HONE_PLUG
+    type: SHORT_HINGE_PLUG
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
     # class: Short hinge frame (Plug)
     description: Short hinge frame with LEGO plugs for X-series servomotor
@@ -653,7 +653,7 @@ PartsSettings:
       translation: [14.0., 32.6, 12.0]
       rotation: [1., 0., 0., -90.0]
   -
-    type: SHORT_HONE_SOCKET
+    type: SHORT_HINGE_SOCKET
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
     # class: Short hinge frame (Plug)
     description: Short hinge frame with LEGO plugs for X-series servomotor
