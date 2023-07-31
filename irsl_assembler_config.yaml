@@ -135,7 +135,7 @@ ConnectingConstraintSettings:
 PanelSettings: ## just for choreonoid
   tab_list:
     - name: Servo Parts (X-series)
-      parts: [XL-430, SHORT_FRAME, SHORT_FRAME_PLUG, SHORT_FRAME_SOCKET, LONG_FRAME_PLUG, LONG_FRAME_SOCKET, SHORT_HINGE_PLUG, SHORT_HINGE_SOCKET, BOTTOM_FRAME_PLUG, BOTTOM_FRAME_SOCKET]
+      parts: [XL-430, SHORT_FRAME, SHORT_FRAME_PLUG, SHORT_FRAME_SOCKET, LONG_FRAME_PLUG, LONG_FRAME_SOCKET, SHORT_HINGE_PLUG, SHORT_HINGE_SOCKET, LONG_HINGE_PLUG, LONG_HINGE_SOCKET, BOTTOM_FRAME_PLUG, BOTTOM_FRAME_SOCKET]
     - name: Servo Parts (X-series) OLD
       parts: [XL-430, FR12_S102, FR12_S102_P, FR12_S102_S, FR12_S101_P, FR12_S101_S, Bottom_mounter, FR12_H101_P, FR12_H101_S, FR12_H103_P, FR12_H103_S, omni-shaft-x, Fixed_Finger, Moveable_Finger]
     - name : Vehicle Parts
@@ -768,6 +768,239 @@ PartsSettings:
       name: socket_3_3
       types : [SC1]
       translation: [14.0, 34.6, 12.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+  -
+    type: LONG_HINGE_PLUG
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    # class: Short hinge frame (Plug)
+    description: Long hinge frame with LEGO plugs for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_test/long_hone.stl"
+        scale : 0.001
+      -
+        # translation: [ 0, 32.1, 0 ]
+        # box: [ 44.0, 1.0, 28 ]
+        translation: [ 2, 51.3, 0 ]
+        box: [ 32.0, 1.0, 32.0 ]
+        color: [0.95, 0.95, 0.95]
+    collision:
+      -
+        type: mesh
+        url: "meshes_test/long_hone.stl"
+        scale : 0.001
+      -
+        # translation: [ 0, 32.1, 0 ]
+        # box: [ 44.0, 1.0, 28 ]
+        translation: [ 2, 51.3, 0 ]
+        box: [ 32.0, 1.0, 32.0 ]
+    mass-param:
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+      name: side_connect_point
+      types: [HORN_X]
+      translation: [19.0, 0.0, 0.0]
+      rotation: [0.0, 1.0, 0.0, 90.0]
+    -
+      name: plug_0_0
+      types : [PC1]
+      translation: [-10.0, 51.8, -12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_0_1
+      types : [PC1]
+      translation: [-10.0, 51.8, -4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_0_2
+      types : [PC1]
+      translation: [-10.0, 51.8, 4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_0_3
+      types : [PC1]
+      translation: [-10.0, 51.8, 12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_1_0
+      types : [PC1]
+      translation: [-2.0, 51.8, -12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_1_1
+      types : [PC1]
+      translation: [-2.0, 51.8, -4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_1_2
+      types : [PC1]
+      translation: [-2.0, 51.8, 4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_1_3
+      types : [PC1]
+      translation: [-2.0, 51.8, 12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_2_0
+      types : [PC1]
+      translation: [6.0, 51.8, -12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_2_1
+      types : [PC1]
+      translation: [6.0, 51.8, -4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_2_2
+      types : [PC1]
+      translation: [6.0, 51.8, 4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_2_3
+      types : [PC1]
+      translation: [6.0, 51.8, 12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_3_0
+      types : [PC1]
+      translation: [14.0, 51.8, -12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_3_1
+      types : [PC1]
+      translation: [14.0, 51.8, -4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_3_2
+      types : [PC1]
+      translation: [14.0, 51.8, 4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: plug_3_3
+      types : [PC1]
+      translation: [14.0, 51.8, 12.0]
+      rotation: [1., 0., 0., -90.0]
+  -
+    type: LONG_HINGE_SOCKET
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    # class: Short hinge frame (Plug)
+    description: Long hinge frame with LEGO plugs for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_test/long_hone.stl"
+        scale : 0.001
+        color: [0.95, 0.95, 0.95]
+      -
+        # translation: [ 0, 33.1, 0 ]
+        # box: [ 44.0, 3.0, 28 ]
+        translation: [ 2, 52.3, 0 ]
+        box: [ 32.0, 3.0, 32.0 ]
+        color: [0.95, 0.95, 0.95]
+    collision:
+      -
+        type: mesh
+        url: "meshes_test/long_hone.stl"
+        scale : 0.001
+      -
+        # translation: [ 0, 33.1, 0 ]
+        # box: [ 44.0, 3.0, 28 ]
+        translation: [ 2, 52.3, 0 ]
+        box: [ 32.0, 3.0, 32.0 ]
+    mass-param:
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+      name: side_connect_point
+      types: [HORN_X]
+      translation: [19.0, 0.0, 0.0]
+      rotation: [0.0, 1.0, 0.0, 90.0]
+    -
+      name: socket_0_0
+      types : [SC1]
+      translation: [-10.0, 53.8, -12.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_0_1
+      types : [SC1]
+      translation: [-10.0, 53.8, -4.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_0_2
+      types : [SC1]
+      translation: [-10.0, 53.8, 4.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_0_3
+      types : [SC1]
+      translation: [-10.0, 53.8, 12.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_1_0
+      types : [SC1]
+      translation: [-2.0, 53.8, -12.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_1_1
+      types : [SC1]
+      translation: [-2.0, 53.8, -4.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_1_2
+      types : [SC1]
+      translation: [-2.0, 53.8, 4.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_1_3
+      types : [SC1]
+      translation: [-2.0, 53.8, 12.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_2_0
+      types : [SC1]
+      translation: [6.0, 53.8, -12.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_2_1
+      types : [SC1]
+      translation: [6.0, 53.8, -4.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_2_2
+      types : [SC1]
+      translation: [6.0, 53.8, 4.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_2_3
+      types : [SC1]
+      translation: [6.0, 53.8, 12.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_3_0
+      types : [SC1]
+      translation: [14.0, 53.8, -12.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_3_1
+      types : [SC1]
+      translation: [14.0, 53.8, -4.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_3_2
+      types : [SC1]
+      translation: [14.0, 53.8, 4.0]
+      rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+      name: socket_3_3
+      types : [SC1]
+      translation: [14.0, 53.8, 12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
   -
     type: LONG_FRAME_PLUG
