@@ -459,82 +459,82 @@ PartsSettings:
     -
       name: socket_0_0
       types : [SC1]
-      translation: [-10.0., -44.25, -12.0]
+      translation: [-10.0, -44.25, -12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_0_1
       types : [SC1]
-      translation: [-10.0., -44.25, -4.0]
+      translation: [-10.0, -44.25, -4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_0_2
       types : [SC1]
-      translation: [-10.0., -44.25, 4.0]
+      translation: [-10.0, -44.25, 4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_0_3
       types : [SC1]
-      translation: [-10.0., -44.25, 12.0]
+      translation: [-10.0, -44.25, 12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_1_0
       types : [SC1]
-      translation: [-2.0., -44.25, -12.0]
+      translation: [-2.0, -44.25, -12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_1_1
       types : [SC1]
-      translation: [-2.0., -44.25, -4.0]
+      translation: [-2.0, -44.25, -4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_1_2
       types : [SC1]
-      translation: [-2.0., -44.25, 4.0]
+      translation: [-2.0, -44.25, 4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_1_3
       types : [SC1]
-      translation: [-2.0., -44.25, 12.0]
+      translation: [-2.0, -44.25, 12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_2_0
       types : [SC1]
-      translation: [6.0., -44.25, -12.0]
+      translation: [6.0, -44.25, -12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_2_1
       types : [SC1]
-      translation: [6.0., -44.25, -4.0]
+      translation: [6.0, -44.25, -4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_2_2
       types : [SC1]
-      translation: [6.0., -44.25, 4.0]
+      translation: [6.0, -44.25, 4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_2_3
       types : [SC1]
-      translation: [6.0., -44.25, 12.0]
+      translation: [6.0, -44.25, 12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_3_0
       types : [SC1]
-      translation: [14.0., -44.25, -12.0]
+      translation: [14.0, -44.25, -12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_3_1
       types : [SC1]
-      translation: [14.0., -44.25, -4.0]
+      translation: [14.0, -44.25, -4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_3_2
       types : [SC1]
-      translation: [14.0., -44.25, 4.0]
+      translation: [14.0, -44.25, 4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: socket_3_3
       types : [SC1]
-      translation: [14.0., -44.25, 12.0]
+      translation: [14.0, -44.25, 12.0]
       rotation: [1., 0., 0., -90.0]
   -
     type: SHORT_HINGE_PLUG
@@ -575,82 +575,82 @@ PartsSettings:
     -
       name: plug_0_0
       types : [PC1]
-      translation: [-10.0., 32.6, -12.0]
+      translation: [-10.0, 32.6, -12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_0_1
       types : [PC1]
-      translation: [-10.0., 32.6, -4.0]
+      translation: [-10.0, 32.6, -4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_0_2
       types : [PC1]
-      translation: [-10.0., 32.6, 4.0]
+      translation: [-10.0, 32.6, 4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_0_3
       types : [PC1]
-      translation: [-10.0., 32.6, 12.0]
+      translation: [-10.0, 32.6, 12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_1_0
       types : [PC1]
-      translation: [-2.0., 32.6, -12.0]
+      translation: [-2.0, 32.6, -12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_1_1
       types : [PC1]
-      translation: [-2.0., 32.6, -4.0]
+      translation: [-2.0, 32.6, -4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_1_2
       types : [PC1]
-      translation: [-2.0., 32.6, 4.0]
+      translation: [-2.0, 32.6, 4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_1_3
       types : [PC1]
-      translation: [-2.0., 32.6, 12.0]
+      translation: [-2.0, 32.6, 12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_2_0
       types : [PC1]
-      translation: [6.0., 32.6, -12.0]
+      translation: [6.0, 32.6, -12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_2_1
       types : [PC1]
-      translation: [6.0., 32.6, -4.0]
+      translation: [6.0, 32.6, -4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_2_2
       types : [PC1]
-      translation: [6.0., 32.6, 4.0]
+      translation: [6.0, 32.6, 4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_2_3
       types : [PC1]
-      translation: [6.0., 32.6, 12.0]
+      translation: [6.0, 32.6, 12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_3_0
       types : [PC1]
-      translation: [14.0., 32.6, -12.0]
+      translation: [14.0, 32.6, -12.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_3_1
       types : [PC1]
-      translation: [14.0., 32.6, -4.0]
+      translation: [14.0, 32.6, -4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_3_2
       types : [PC1]
-      translation: [14.0., 32.6, 4.0]
+      translation: [14.0, 32.6, 4.0]
       rotation: [1., 0., 0., -90.0]
     -
       name: plug_3_3
       types : [PC1]
-      translation: [14.0., 32.6, 12.0]
+      translation: [14.0, 32.6, 12.0]
       rotation: [1., 0., 0., -90.0]
   -
     type: SHORT_HINGE_SOCKET
@@ -692,82 +692,82 @@ PartsSettings:
     -
       name: socket_0_0
       types : [SC1]
-      translation: [-10.0., 34.6, -12.0]
+      translation: [-10.0, 34.6, -12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_0_1
       types : [SC1]
-      translation: [-10.0., 34.6, -4.0]
+      translation: [-10.0, 34.6, -4.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_0_2
       types : [SC1]
-      translation: [-10.0., 34.6, 4.0]
+      translation: [-10.0, 34.6, 4.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_0_3
       types : [SC1]
-      translation: [-10.0., 34.6, 12.0]
+      translation: [-10.0, 34.6, 12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_1_0
       types : [SC1]
-      translation: [-2.0., 34.6, -12.0]
+      translation: [-2.0, 34.6, -12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_1_1
       types : [SC1]
-      translation: [-2.0., 34.6, -4.0]
+      translation: [-2.0, 34.6, -4.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_1_2
       types : [SC1]
-      translation: [-2.0., 34.6, 4.0]
+      translation: [-2.0, 34.6, 4.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_1_3
       types : [SC1]
-      translation: [-2.0., 34.6, 12.0]
+      translation: [-2.0, 34.6, 12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_2_0
       types : [SC1]
-      translation: [6.0., 34.6, -12.0]
+      translation: [6.0, 34.6, -12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_2_1
       types : [SC1]
-      translation: [6.0., 34.6, -4.0]
+      translation: [6.0, 34.6, -4.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_2_2
       types : [SC1]
-      translation: [6.0., 34.6, 4.0]
+      translation: [6.0, 34.6, 4.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_2_3
       types : [SC1]
-      translation: [6.0., 34.6, 12.0]
+      translation: [6.0, 34.6, 12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_3_0
       types : [SC1]
-      translation: [14.0., 34.6, -12.0]
+      translation: [14.0, 34.6, -12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_3_1
       types : [SC1]
-      translation: [14.0., 34.6, -4.0]
+      translation: [14.0, 34.6, -4.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_3_2
       types : [SC1]
-      translation: [14.0., 34.6, 4.0]
+      translation: [14.0, 34.6, 4.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
     -
       name: socket_3_3
       types : [SC1]
-      translation: [14.0., 34.6, 12.0]
+      translation: [14.0, 34.6, 12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
   -
     type: LONG_FRAME_PLUG
@@ -811,102 +811,102 @@ PartsSettings:
     -
       name: plug_0_0
       types : [PC1]
-      translation: [-10.0., -28.0, -23.0]
+      translation: [-10.0, -28.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_0_1
       types : [PC1]
-      translation: [-10.0., -20.0, -23.0]
+      translation: [-10.0, -20.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_0_2
       types : [PC1]
-      translation: [-10.0., -12.0, -23.0]
+      translation: [-10.0, -12.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_0_3
       types : [PC1]
-      translation: [-10.0., -4.0, -23.0]
+      translation: [-10.0, -4.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_0_4
       types : [PC1]
-      translation: [-10.0., 4.0, -23.0]
+      translation: [-10.0, 4.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_1_0
       types : [PC1]
-      translation: [-2.0., -28.0, -23.0]
+      translation: [-2.0, -28.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_1_1
       types : [PC1]
-      translation: [-2.0., -20.0, -23.0]
+      translation: [-2.0, -20.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_1_2
       types : [PC1]
-      translation: [-2.0., -12.0, -23.0]
+      translation: [-2.0, -12.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_1_3
       types : [PC1]
-      translation: [-2.0., -4.0, -23.0]
+      translation: [-2.0, -4.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_1_4
       types : [PC1]
-      translation: [-2.0., 4.0, -23.0]
+      translation: [-2.0, 4.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_2_0
       types : [PC1]
-      translation: [6.0., -28.0, -23.0]
+      translation: [6.0, -28.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_2_1
       types : [PC1]
-      translation: [6.0., -20.0, -23.0]
+      translation: [6.0, -20.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_2_2
       types : [PC1]
-      translation: [6.0., -12.0, -23.0]
+      translation: [6.0, -12.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_2_3
       types : [PC1]
-      translation: [6.0., -4.0, -23.0]
+      translation: [6.0, -4.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_2_4
       types : [PC1]
-      translation: [6.0., 4.0, -23.0]
+      translation: [6.0, 4.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_3_0
       types : [PC1]
-      translation: [14.0., -28.0, -23.0]
+      translation: [14.0, -28.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_3_1
       types : [PC1]
-      translation: [14.0., -20.0, -23.0]
+      translation: [14.0, -20.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_3_2
       types : [PC1]
-      translation: [14.0., -12.0, -23.0]
+      translation: [14.0, -12.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_3_3
       types : [PC1]
-      translation: [14.0., -4.0, -23.0]
+      translation: [14.0, -4.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
     -
       name: plug_3_4
       types : [PC1]
-      translation: [14.0., 4.0, -23.0]
+      translation: [14.0, 4.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
   -
     type: LONG_FRAME_SOCKET
@@ -950,102 +950,102 @@ PartsSettings:
     -
       name: socket_0_0
       types : [SC1]
-      translation: [-10.0., -28.0, -25.0]
+      translation: [-10.0, -28.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_0_1
       types : [SC1]
-      translation: [-10.0., -20.0, -25.0]
+      translation: [-10.0, -20.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_0_2
       types : [SC1]
-      translation: [-10.0., -12.0, -25.0]
+      translation: [-10.0, -12.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_0_3
       types : [SC1]
-      translation: [-10.0., -4.0, -25.0]
+      translation: [-10.0, -4.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_0_4
       types : [SC1]
-      translation: [-10.0., 4.0, -25.0]
+      translation: [-10.0, 4.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_1_0
       types : [SC1]
-      translation: [-2.0., -28.0, -25.0]
+      translation: [-2.0, -28.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_1_1
       types : [SC1]
-      translation: [-2.0., -20.0, -25.0]
+      translation: [-2.0, -20.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_1_2
       types : [SC1]
-      translation: [-2.0., -12.0, -25.0]
+      translation: [-2.0, -12.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_1_3
       types : [SC1]
-      translation: [-2.0., -4.0, -25.0]
+      translation: [-2.0, -4.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_1_4
       types : [SC1]
-      translation: [-2.0., 4.0, -25.0]
+      translation: [-2.0, 4.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_2_0
       types : [SC1]
-      translation: [6.0., -28.0, -25.0]
+      translation: [6.0, -28.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_2_1
       types : [SC1]
-      translation: [6.0., -20.0, -25.0]
+      translation: [6.0, -20.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_2_2
       types : [SC1]
-      translation: [6.0., -12.0, -25.0]
+      translation: [6.0, -12.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_2_3
       types : [SC1]
-      translation: [6.0., -4.0, -25.0]
+      translation: [6.0, -4.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_2_4
       types : [SC1]
-      translation: [6.0., 4.0, -25.0]
+      translation: [6.0, 4.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_3_0
       types : [SC1]
-      translation: [14.0., -28.0, -25.0]
+      translation: [14.0, -28.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_3_1
       types : [SC1]
-      translation: [14.0., -20.0, -25.0]
+      translation: [14.0, -20.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_3_2
       types : [SC1]
-      translation: [14.0., -12.0, -25.0]
+      translation: [14.0, -12.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_3_3
       types : [SC1]
-      translation: [14.0., -4.0, -25.0]
+      translation: [14.0, -4.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
     -
       name: socket_3_4
       types : [SC1]
-      translation: [14.0., 4.0, -25.0]
+      translation: [14.0, 4.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
   -
     type: BOTTOM_FRAME_PLUG
