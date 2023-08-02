@@ -134,12 +134,13 @@ ConnectingConstraintSettings:
 
 PanelSettings: ## just for choreonoid
   tab_list:
-    - name: Servo Parts (X-series)
-      parts: [XL-430, SHORT_FRAME, SHORT_FRAME_PLUG, SHORT_FRAME_SOCKET, LONG_FRAME_PLUG, LONG_FRAME_SOCKET, SHORT_HINGE_PLUG, SHORT_HINGE_SOCKET, LONG_HINGE_PLUG, LONG_HINGE_SOCKET, BOTTOM_FRAME_PLUG, BOTTOM_FRAME_SOCKET]
-    - name: Servo Parts (X-series) OLD
-      parts: [XL-430, FR12_S102, FR12_S102_P, FR12_S102_S, FR12_S101_P, FR12_S101_S, Bottom_mounter, FR12_H101_P, FR12_H101_S, FR12_H103_P, FR12_H103_S, omni-shaft-x, Fixed_Finger, Moveable_Finger]
+    - name: Servo Parts
+      parts: [XL-430, SHORT_HINGE_PLUG, SHORT_HINGE_SOCKET, LONG_HINGE_PLUG, LONG_HINGE_SOCKET, SHORT_FRAME, SHORT_FRAME_PLUG, SHORT_FRAME_SOCKET, LONG_FRAME_PLUG, LONG_FRAME_SOCKET, BOTTOM_FRAME_PLUG, BOTTOM_FRAME_SOCKET, Fixed_Finger, Moveable_Finger]
+    # - name: Servo Parts (X-series) OLD
+    #   parts: [XL-430, FR12_S102, FR12_S102_P, FR12_S102_S, FR12_S101_P, FR12_S101_S, Bottom_mounter, FR12_H101_P, FR12_H101_S, FR12_H103_P, FR12_H103_S, omni-shaft-x, Fixed_Finger, Moveable_Finger]
     - name : Vehicle Parts
-      parts: [vehicle-base, vehicle-base-pp,  vehicle-base-pp-r1, vehicle-base-ps, omni-wheel]
+      # parts: [vehicle-base, vehicle-base-pp,  vehicle-base-pp-r1, vehicle-base-ps, omni-wheel]
+      parts: [vehicle-base-pp-r1, vehicle-base-ps, omni-shaft-x, omni-wheel]
     - name: Sensor Parts
       parts: [sensor-mounter, grove-sensor-mounter, ultrasonic-sensor, tof-sensor, grove-color-sensor, camera-module]
     - name: Special Parts
