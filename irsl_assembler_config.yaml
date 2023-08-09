@@ -135,7 +135,7 @@ ConnectingConstraintSettings:
 PanelSettings: ## just for choreonoid
   tab_list:
     - name: Servo Parts
-      parts: [XL-430, SHORT_HINGE_PLUG, SHORT_HINGE_SOCKET, LONG_HINGE_PLUG, LONG_HINGE_SOCKET, SHORT_FRAME, SHORT_FRAME_PLUG, SHORT_FRAME_SOCKET, LONG_FRAME_PLUG, LONG_FRAME_SOCKET, BOTTOM_FRAME_PLUG, BOTTOM_FRAME_SOCKET, Fixed_Finger, Moveable_Finger]
+      parts: [XL-430, Hinge_Short_Plug, Hinge_Short_Socket, Hinge_Long_Plug, Hinge_Long_Socket, Frame_Short, Frame_Short_Plug, Frame_Short_Socket, Frame_Long_Plug, Frame_Long_Socket, Frame_Bottom_Plug, Frame_Bottom_Socket, Fixed_Finger, Moveable_Finger]
     # - name: Servo Parts (X-series) OLD
     #   parts: [XL-430, FR12_S102, FR12_S102_P, FR12_S102_S, FR12_S101_P, FR12_S101_S, Bottom_mounter, FR12_H101_P, FR12_H101_S, FR12_H103_P, FR12_H103_S, omni-shaft-x, Fixed_Finger, Moveable_Finger]
     - name : Vehicle Parts
@@ -265,7 +265,7 @@ PartsSettings:
         translation: [-11.0, -32.0, -36.0]
         rotation: [1.0, 0.0, 0.0, 180.0]
   -
-    type: SHORT_FRAME
+    type: Frame_Short
     description: Short side frame for X-series servomotor
     visual:
       -
@@ -298,7 +298,7 @@ PartsSettings:
       translation: [0.0, -42.25, 0.0]
       rotation: [1., 0., 0., -90.0]
   -
-    type: SHORT_FRAME_PLUG
+    type: Frame_Short_Plug
     description: Short side frame for X-series servomotor
     visual:
       -
@@ -418,7 +418,7 @@ PartsSettings:
       translation: [14., -42.25, 12.]
       rotation: [1., 0., 0., 90.0]
   -
-    type: SHORT_FRAME_SOCKET
+    type: Frame_Short_Socket
     description: Short side frame for X-series servomotor
     visual:
       -
@@ -538,7 +538,7 @@ PartsSettings:
       translation: [14.0, -44.25, 12.0]
       rotation: [1., 0., 0., -90.0]
   -
-    type: SHORT_HINGE_PLUG
+    type: Hinge_Short_Plug
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
     # class: Short hinge frame (Plug)
     description: Short hinge frame with LEGO plugs for X-series servomotor
@@ -654,7 +654,7 @@ PartsSettings:
       translation: [14.0, 32.6, 12.0]
       rotation: [1., 0., 0., -90.0]
   -
-    type: SHORT_HINGE_SOCKET
+    type: Hinge_Short_Socket
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
     # class: Short hinge frame (Plug)
     description: Short hinge frame with LEGO plugs for X-series servomotor
@@ -771,7 +771,7 @@ PartsSettings:
       translation: [14.0, 34.6, 12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
   -
-    type: LONG_HINGE_PLUG
+    type: Hinge_Long_Plug
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
     # class: Short hinge frame (Plug)
     description: Long hinge frame with LEGO plugs for X-series servomotor
@@ -887,7 +887,7 @@ PartsSettings:
       translation: [14.0, 51.8, 12.0]
       rotation: [1., 0., 0., -90.0]
   -
-    type: LONG_HINGE_SOCKET
+    type: Hinge_Long_Socket
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
     # class: Short hinge frame (Plug)
     description: Long hinge frame with LEGO plugs for X-series servomotor
@@ -1004,7 +1004,7 @@ PartsSettings:
       translation: [14.0, 53.8, 12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
   -
-    type: LONG_FRAME_PLUG
+    type: Frame_Long_Plug
     description: Long side frame for X-series servomotor
     visual:
       -
@@ -1143,7 +1143,7 @@ PartsSettings:
       translation: [14.0, 4.0, -23.0]
       rotation: [0.0, 1.0, 0.0, 180.0]
   -
-    type: LONG_FRAME_SOCKET
+    type: Frame_Long_Socket
     description: Long side frame for X-series servomotor
     visual:
       -
@@ -1282,9 +1282,9 @@ PartsSettings:
       translation: [14.0, 4.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
   -
-    type: BOTTOM_FRAME_PLUG
+    type: Frame_Bottom_Plug
     # class: Short hinge frame (Plug)
-    description: Short hinge frame with LEGO plugs for X-series servomotor
+    description: Bottom frame with LEGO plugs for X-series servomotor
     visual:
       -
         type: mesh
@@ -1374,7 +1374,7 @@ PartsSettings:
         translation: [-21.0, -4.0, 12.0]
         rotation: [0.0, 1.0, 0.0, -90.0]
   -
-    type: BOTTOM_FRAME_SOCKET
+    type: Frame_Bottom_Socket
     description: Bottom frame with sockets for X-series servomotor
     visual:
       -
