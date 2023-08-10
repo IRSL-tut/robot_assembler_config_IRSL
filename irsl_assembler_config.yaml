@@ -2770,8 +2770,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [0.001, 0.001, 0.001]
         type: mesh
         url: "meshes/ax-12a-f2.stl"
         scale : 1
@@ -2807,8 +2805,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/ax-12a-f3.stl"
         scale : 1
@@ -2837,8 +2833,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/ax-12a-f3-p.stl"
         scale : 1
@@ -3038,8 +3032,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/FP04-F53_m.stl"
         scale : 1
@@ -3130,8 +3122,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/ax-12a-f3-s.stl"
         scale : 1
@@ -3331,8 +3321,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/ax-12a-f3-s_3x3_m.stl"
         scale : 1
@@ -3400,8 +3388,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/FP04-F4_m.stl"
         scale : 1
@@ -3428,8 +3414,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/FP04-F4_m.stl"
         scale : 1
@@ -3488,8 +3472,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/FP04-F2-P_m.stl"
         scale : 1
@@ -3618,8 +3600,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/FP04-F2-P_3x3_m.stl"
         scale : 1
@@ -3671,8 +3651,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/ultrasonic.stl"
         scale : 1
@@ -3704,8 +3682,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/tof-sensor.stl"
         scale : 1
@@ -5454,8 +5430,6 @@ PartsSettings:
         scale : 0.001
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [0.001, 0.001, 0.001]
         type: mesh
         url: "meshes/vehicle_base_ps_mm.stl"
         scale : 0.001
@@ -6764,8 +6738,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [0.001, 0.001, 0.001]
         type: mesh
         url: "meshes/omni_shaft_m.stl"
         scale : 1
@@ -6797,8 +6769,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [0.001, 0.001, 0.001]
         type: mesh
         url: "meshes/omni_wheel_m.stl"
         scale : 1
