@@ -135,7 +135,9 @@ ConnectingConstraintSettings:
 PanelSettings: ## just for choreonoid
   tab_list:
     - name: Servo Parts
-      parts: [XL-430, Hinge_Short_Plug, Hinge_Short_Socket, Hinge_Long_Plug, Hinge_Long_Socket, Frame_Short, Frame_Short_Plug, Frame_Short_Socket, Frame_Long_Plug, Frame_Long_Socket, Frame_Bottom_Plug, Frame_Bottom_Socket, Fixed_Finger, Moveable_Finger]
+      parts: [XL-430, Hinge_Short_Plug, Hinge_Short_Socket, Hinge_Long_Plug, Hinge_Long_Socket,  omni-shaft-x, Moveable_Finger]
+    - name: Frames
+      parts: [Frame_Short_Plug, Frame_Short_Socket, Frame_Short, Frame_Long_Plug, Frame_Long_Socket, Frame_Bottom_Plug, Frame_Bottom_Socket, Fixed_Finger]
     # - name: Servo Parts (X-series) OLD
     #   parts: [XL-430, FR12_S102, FR12_S102_P, FR12_S102_S, FR12_S101_P, FR12_S101_S, Bottom_mounter, FR12_H101_P, FR12_H101_S, FR12_H103_P, FR12_H103_S, omni-shaft-x, Fixed_Finger, Moveable_Finger]
     - name : Vehicle Parts
@@ -266,6 +268,7 @@ PartsSettings:
         rotation: [1.0, 0.0, 0.0, 180.0]
   -
     type: Frame_Short
+    class: Side-Frame Short ( HORN )
     description: Short side frame for X-series servomotor
     visual:
       -
@@ -299,6 +302,7 @@ PartsSettings:
       rotation: [1., 0., 0., -90.0]
   -
     type: Frame_Short_Plug
+    class: Side-Frame Short ( Plug )
     description: Short side frame for X-series servomotor
     visual:
       -
@@ -419,6 +423,7 @@ PartsSettings:
       rotation: [1., 0., 0., 90.0]
   -
     type: Frame_Short_Socket
+    class: Side-Frame Short (Socket)
     description: Short side frame for X-series servomotor
     visual:
       -
@@ -540,7 +545,7 @@ PartsSettings:
   -
     type: Hinge_Short_Plug
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
-    # class: Short hinge frame (Plug)
+    class: Hinge Short ( Plug )
     description: Short hinge frame with LEGO plugs for X-series servomotor
     visual:
       -
@@ -656,7 +661,7 @@ PartsSettings:
   -
     type: Hinge_Short_Socket
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
-    # class: Short hinge frame (Plug)
+    class: Hinge Short (Socket)
     description: Short hinge frame with LEGO plugs for X-series servomotor
     visual:
       -
@@ -773,7 +778,7 @@ PartsSettings:
   -
     type: Hinge_Long_Plug
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
-    # class: Short hinge frame (Plug)
+    class: Hinge Long  ( Plug )
     description: Long hinge frame with LEGO plugs for X-series servomotor
     visual:
       -
@@ -889,7 +894,7 @@ PartsSettings:
   -
     type: Hinge_Long_Socket
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
-    # class: Short hinge frame (Plug)
+    class: Hinge Long  (Socket)
     description: Long hinge frame with LEGO plugs for X-series servomotor
     visual:
       -
@@ -1005,6 +1010,7 @@ PartsSettings:
       rotation: [1.0, 0.0, 0.0, 90.0]
   -
     type: Frame_Long_Plug
+    class: Side-Frame Long  ( Plug )
     description: Long side frame for X-series servomotor
     visual:
       -
@@ -1144,6 +1150,7 @@ PartsSettings:
       rotation: [0.0, 1.0, 0.0, 180.0]
   -
     type: Frame_Long_Socket
+    class: Side-Frame Long  (Socket)
     description: Long side frame for X-series servomotor
     visual:
       -
@@ -1283,7 +1290,7 @@ PartsSettings:
       rotation: [0.0, 1.0, 0.0, 0.0]
   -
     type: Frame_Bottom_Plug
-    # class: Short hinge frame (Plug)
+    class: Bottom-Frame ( Plug )
     description: Bottom frame with LEGO plugs for X-series servomotor
     visual:
       -
@@ -1375,6 +1382,7 @@ PartsSettings:
         rotation: [0.0, 1.0, 0.0, -90.0]
   -
     type: Frame_Bottom_Socket
+    class: Bottom-Frame (Socket)
     description: Bottom frame with sockets for X-series servomotor
     visual:
       -
