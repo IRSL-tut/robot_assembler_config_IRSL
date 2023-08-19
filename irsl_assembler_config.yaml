@@ -135,7 +135,9 @@ ConnectingConstraintSettings:
 PanelSettings: ## just for choreonoid
   tab_list:
     - name: Servo Parts
-      parts: [XL-430, Hinge_Short_Plug, Hinge_Short_Socket, Hinge_Long_Plug, Hinge_Long_Socket, Frame_Short, Frame_Short_Plug, Frame_Short_Socket, Frame_Long_Plug, Frame_Long_Socket, Frame_Bottom_Plug, Frame_Bottom_Socket, Fixed_Finger, Moveable_Finger]
+      parts: [XL-430, Hinge_Short_Plug, Hinge_Short_Socket, Hinge_Long_Plug, Hinge_Long_Socket,  omni-shaft-x, Moveable_Finger]
+    - name: Frames
+      parts: [Frame_Short_Plug, Frame_Short_Socket, Frame_Short, Frame_Long_Plug, Frame_Long_Socket, Frame_Bottom_Plug, Frame_Bottom_Socket, Fixed_Finger]
     # - name: Servo Parts (X-series) OLD
     #   parts: [XL-430, FR12_S102, FR12_S102_P, FR12_S102_S, FR12_S101_P, FR12_S101_S, Bottom_mounter, FR12_H101_P, FR12_H101_S, FR12_H103_P, FR12_H103_S, omni-shaft-x, Fixed_Finger, Moveable_Finger]
     - name : Vehicle Parts
@@ -266,6 +268,7 @@ PartsSettings:
         rotation: [1.0, 0.0, 0.0, 180.0]
   -
     type: Frame_Short
+    class: Side-Frame Short ( HORN )
     description: Short side frame for X-series servomotor
     visual:
       -
@@ -299,6 +302,7 @@ PartsSettings:
       rotation: [1., 0., 0., -90.0]
   -
     type: Frame_Short_Plug
+    class: Side-Frame Short ( Plug )
     description: Short side frame for X-series servomotor
     visual:
       -
@@ -311,7 +315,7 @@ PartsSettings:
         # box: [ 34.0, 1.0, 28.5 ]
         translation: [ 2.0, -41.75, 0 ]
         box: [ 32.0, 1.0, 32.0 ]
-        color: [0.95, 0.95, 0.95]
+        color: [0.80, 0.90, 0.90]
     collision:
       -
         type: mesh
@@ -419,6 +423,7 @@ PartsSettings:
       rotation: [1., 0., 0., 90.0]
   -
     type: Frame_Short_Socket
+    class: Side-Frame Short (Socket)
     description: Short side frame for X-series servomotor
     visual:
       -
@@ -431,7 +436,7 @@ PartsSettings:
         # box: [ 34.0, 3.0, 28.5 ]
         translation: [ 2.0, -42.75, 0 ]
         box: [ 32.0, 3.0, 32.0 ]
-        color: [0.95, 0.95, 0.95]
+        color: [0.90, 0.80, 0.80]
     collision:
       -
         type: mesh
@@ -540,7 +545,7 @@ PartsSettings:
   -
     type: Hinge_Short_Plug
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
-    # class: Short hinge frame (Plug)
+    class: Hinge Short ( Plug )
     description: Short hinge frame with LEGO plugs for X-series servomotor
     visual:
       -
@@ -552,7 +557,7 @@ PartsSettings:
         # box: [ 44.0, 1.0, 28 ]
         translation: [ 2, 32.1, 0 ]
         box: [ 32.0, 1.0, 32.0 ]
-        color: [0.95, 0.95, 0.95]
+        color: [0.80, 0.90, 0.90]
     collision:
       -
         type: mesh
@@ -656,7 +661,7 @@ PartsSettings:
   -
     type: Hinge_Short_Socket
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
-    # class: Short hinge frame (Plug)
+    class: Hinge Short (Socket)
     description: Short hinge frame with LEGO plugs for X-series servomotor
     visual:
       -
@@ -669,7 +674,7 @@ PartsSettings:
         # box: [ 44.0, 3.0, 28 ]
         translation: [ 2, 33.1, 0 ]
         box: [ 32.0, 3.0, 32.0 ]
-        color: [0.95, 0.95, 0.95]
+        color: [0.90, 0.80, 0.80]
     collision:
       -
         type: mesh
@@ -773,7 +778,7 @@ PartsSettings:
   -
     type: Hinge_Long_Plug
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
-    # class: Short hinge frame (Plug)
+    class: Hinge Long  ( Plug )
     description: Long hinge frame with LEGO plugs for X-series servomotor
     visual:
       -
@@ -785,7 +790,7 @@ PartsSettings:
         # box: [ 44.0, 1.0, 28 ]
         translation: [ 2, 51.3, 0 ]
         box: [ 32.0, 1.0, 32.0 ]
-        color: [0.95, 0.95, 0.95]
+        color: [0.80, 0.90, 0.90]
     collision:
       -
         type: mesh
@@ -889,7 +894,7 @@ PartsSettings:
   -
     type: Hinge_Long_Socket
     # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
-    # class: Short hinge frame (Plug)
+    class: Hinge Long  (Socket)
     description: Long hinge frame with LEGO plugs for X-series servomotor
     visual:
       -
@@ -902,7 +907,7 @@ PartsSettings:
         # box: [ 44.0, 3.0, 28 ]
         translation: [ 2, 52.3, 0 ]
         box: [ 32.0, 3.0, 32.0 ]
-        color: [0.95, 0.95, 0.95]
+        color: [0.90, 0.80, 0.80]
     collision:
       -
         type: mesh
@@ -1005,6 +1010,7 @@ PartsSettings:
       rotation: [1.0, 0.0, 0.0, 90.0]
   -
     type: Frame_Long_Plug
+    class: Side-Frame Long  ( Plug )
     description: Long side frame for X-series servomotor
     visual:
       -
@@ -1016,7 +1022,7 @@ PartsSettings:
         # box: [ 34.0, 46.5, 1. ]
         translation: [ 2, -12., -22.5 ]
         box: [ 32.0, 40.0, 1. ]
-        color: [0.95, 0.95, 0.95]
+        color: [0.80, 0.90, 0.90]
     collision:
       -
         type: mesh
@@ -1144,6 +1150,7 @@ PartsSettings:
       rotation: [0.0, 1.0, 0.0, 180.0]
   -
     type: Frame_Long_Socket
+    class: Side-Frame Long  (Socket)
     description: Long side frame for X-series servomotor
     visual:
       -
@@ -1155,7 +1162,7 @@ PartsSettings:
         # box: [ 34.0, 46.5, 3. ]
         translation: [ 2, -12., -23.5 ]
         box: [ 32.0, 40.0, 3. ]
-        color: [0.95, 0.95, 0.95]
+        color: [0.90, 0.80, 0.80]
     collision:
       -
         type: mesh
@@ -1283,7 +1290,7 @@ PartsSettings:
       rotation: [0.0, 1.0, 0.0, 0.0]
   -
     type: Frame_Bottom_Plug
-    # class: Short hinge frame (Plug)
+    class: Bottom-Frame ( Plug )
     description: Bottom frame with LEGO plugs for X-series servomotor
     visual:
       -
@@ -1294,7 +1301,7 @@ PartsSettings:
       -
         translation: [ -20.5, -12.0, 0 ]
         box: [ 1.0, 24.0, 32.0 ]
-        color: [0.95, 0.95, 0.95]
+        color: [0.80, 0.90, 0.90]
     collision:
       -
         type: mesh
@@ -1375,6 +1382,7 @@ PartsSettings:
         rotation: [0.0, 1.0, 0.0, -90.0]
   -
     type: Frame_Bottom_Socket
+    class: Bottom-Frame (Socket)
     description: Bottom frame with sockets for X-series servomotor
     visual:
       -
@@ -1385,7 +1393,7 @@ PartsSettings:
       -
         translation: [ -21.5, -12.0, 0 ]
         box: [ 3.0, 24.0, 32.0 ]
-        color: [0.95, 0.95, 0.95]
+        color: [0.90, 0.80, 0.80]
     collision:
       -
         type: mesh
@@ -2770,8 +2778,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [0.001, 0.001, 0.001]
         type: mesh
         url: "meshes/ax-12a-f2.stl"
         scale : 1
@@ -2807,8 +2813,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/ax-12a-f3.stl"
         scale : 1
@@ -2837,8 +2841,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/ax-12a-f3-p.stl"
         scale : 1
@@ -3038,8 +3040,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/FP04-F53_m.stl"
         scale : 1
@@ -3130,8 +3130,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/ax-12a-f3-s.stl"
         scale : 1
@@ -3331,8 +3329,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/ax-12a-f3-s_3x3_m.stl"
         scale : 1
@@ -3400,8 +3396,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/FP04-F4_m.stl"
         scale : 1
@@ -3428,8 +3422,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/FP04-F4_m.stl"
         scale : 1
@@ -3488,8 +3480,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/FP04-F2-P_m.stl"
         scale : 1
@@ -3618,8 +3608,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/FP04-F2-P_3x3_m.stl"
         scale : 1
@@ -3671,8 +3659,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/ultrasonic.stl"
         scale : 1
@@ -3704,8 +3690,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [1.0, 1.0, 1.0]
         type: mesh
         url: "meshes/tof-sensor.stl"
         scale : 1
@@ -5454,8 +5438,6 @@ PartsSettings:
         scale : 0.001
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [0.001, 0.001, 0.001]
         type: mesh
         url: "meshes/vehicle_base_ps_mm.stl"
         scale : 0.001
@@ -6764,8 +6746,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [0.001, 0.001, 0.001]
         type: mesh
         url: "meshes/omni_shaft_m.stl"
         scale : 1
@@ -6797,8 +6777,6 @@ PartsSettings:
         scale : 1
     collision:
       -
-        # translation: [0.0, 0.0, 0.0]
-        # box: [0.001, 0.001, 0.001]
         type: mesh
         url: "meshes/omni_wheel_m.stl"
         scale : 1
