@@ -311,10 +311,11 @@ PartsSettings:
         scale : 0.001
         color: [0.95, 0.95, 0.95]
       -
-        # translation: [ 0, -41.75, 0 ]
-        # box: [ 34.0, 1.0, 28.5 ]
         translation: [ 2.0, -41.75, 0 ]
-        box: [ 32.0, 1.0, 32.0 ]
+        rotation: [1, 0, 0, 90]
+        type: mesh
+        url: "meshes_test/attachment_plug_4_4.stl"
+        scale : 0.001
         color: [0.80, 0.90, 0.90]
     collision:
       -
@@ -322,8 +323,6 @@ PartsSettings:
         url: "meshes_test/short_frame.stl"
         scale : 0.001
       -
-        # translation: [ 0, -41.75, 0 ]
-        # box: [ 34.0, 1.0, 28.5 ]
         translation: [ 2.0, -41.75, 0 ]
         box: [ 32.0, 1.0, 32.0 ]
     mass-param:
@@ -432,10 +431,11 @@ PartsSettings:
         scale : 0.001
         color: [0.95, 0.95, 0.95]
       -
-        # translation: [ 0, -42.75, 0 ]
-        # box: [ 34.0, 3.0, 28.5 ]
         translation: [ 2.0, -42.75, 0 ]
-        box: [ 32.0, 3.0, 32.0 ]
+        rotation: [1, 0, 0, -90]
+        type: mesh
+        url: "meshes_test/attachment_socket_4_4.stl"
+        scale : 0.001
         color: [0.90, 0.80, 0.80]
     collision:
       -
@@ -443,8 +443,6 @@ PartsSettings:
         url: "meshes_test/short_frame.stl"
         scale : 0.001
       -
-        # translation: [ 0, -42.75, 0 ]
-        # box: [ 34.0, 3.0, 28.5 ]
         translation: [ 2.0, -42.75, 0 ]
         box: [ 32.0, 3.0, 32.0 ]
     mass-param:
