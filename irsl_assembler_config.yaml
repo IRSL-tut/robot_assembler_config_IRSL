@@ -215,12 +215,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/XL-430_mm.stl"
+        url: "meshes/x_series/XL-430_mm.stl"
         scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes_xseries/XL-430_mm.stl"
+        url: "meshes/x_series/XL-430_mm.stl"
         scale : 0.001
     mass-param:
       mass: 57.0
@@ -273,12 +273,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_test/short_frame.stl"
+        url: "meshes/x_series/short_frame_mm.stl"
         scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes_test/short_frame.stl"
+        url: "meshes/x_series/short_frame_mm.stl"
         scale : 0.001
     mass-param:
       mass: 5.695
@@ -307,20 +307,20 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_test/short_frame.stl"
+        url: "meshes/x_series/short_frame_mm.stl"
         scale : 0.001
         color: [0.95, 0.95, 0.95]
       -
         translation: [ 2.0, -41.75, 0 ]
         rotation: [1, 0, 0, 90]
         type: mesh
-        url: "meshes_test/attachment_plug_4_4.stl"
+        url: "meshes/universal/attachment_plug_4_4_mm.stl"
         scale : 0.001
         color: [0.80, 0.90, 0.90]
     collision:
       -
         type: mesh
-        url: "meshes_test/short_frame.stl"
+        url: "meshes/x_series/short_frame_mm.stl"
         scale : 0.001
       -
         translation: [ 2.0, -41.75, 0 ]
@@ -427,20 +427,20 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_test/short_frame.stl"
+        url: "meshes/x_series/short_frame_mm.stl"
         scale : 0.001
         color: [0.95, 0.95, 0.95]
       -
         translation: [ 2.0, -42.75, 0 ]
         rotation: [1, 0, 0, -90]
         type: mesh
-        url: "meshes_test/attachment_socket_4_4.stl"
+        url: "meshes/universal/attachment_socket_4_4_mm.stl"
         scale : 0.001
         color: [0.90, 0.80, 0.80]
     collision:
       -
         type: mesh
-        url: "meshes_test/short_frame.stl"
+        url: "meshes/x_series/short_frame_mm.stl"
         scale : 0.001
       -
         translation: [ 2.0, -42.75, 0 ]
@@ -548,19 +548,19 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_test/short_hone.stl"
+        url: "meshes/x_series/short_hone_mm.stl"
         scale : 0.001
       -
         translation: [ 2, 32.1, 0 ]
         rotation: [1, 0, 0, -90]
         type: mesh
-        url: "meshes_test/attachment_plug_4_4.stl"
+        url: "meshes/universal/attachment_plug_4_4_mm.stl"
         scale : 0.001
         color: [0.80, 0.90, 0.90]
     collision:
       -
         type: mesh
-        url: "meshes_test/short_hone.stl"
+        url: "meshes/x_series/short_hone_mm.stl"
         scale : 0.001
       -
         translation: [ 2, 32.1, 0 ]
@@ -663,20 +663,20 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_test/short_hone.stl"
+        url: "meshes/x_series/short_hone_mm.stl"
         scale : 0.001
         color: [0.95, 0.95, 0.95]
       -
         translation: [ 2, 33.1, 0 ]
         rotation: [1, 0, 0, 90]
         type: mesh
-        url: "meshes_test/attachment_socket_4_4.stl"
+        url: "meshes/universal/attachment_socket_4_4_mm.stl"
         scale : 0.001
         color: [0.90, 0.80, 0.80]
     collision:
       -
         type: mesh
-        url: "meshes_test/short_hone.stl"
+        url: "meshes/x_series/short_hone_mm.stl"
         scale : 0.001
       -
         translation: [ 2, 33.1, 0 ]
@@ -779,19 +779,19 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_test/long_hone.stl"
+        url: "meshes/x_series/long_hone_mm.stl"
         scale : 0.001
       -
         translation: [ 2, 51.3, 0 ]
         rotation: [1, 0, 0, -90]
         type: mesh
-        url: "meshes_test/attachment_plug_4_4.stl"
+        url: "meshes/universal/attachment_plug_4_4_mm.stl"
         scale : 0.001
         color: [0.80, 0.90, 0.90]
     collision:
       -
         type: mesh
-        url: "meshes_test/long_hone.stl"
+        url: "meshes/x_series/long_hone_mm.stl"
         scale : 0.001
       -
         translation: [ 2, 51.3, 0 ]
@@ -894,20 +894,20 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_test/long_hone.stl"
+        url: "meshes/x_series/long_hone_mm.stl"
         scale : 0.001
         color: [0.95, 0.95, 0.95]
       -
         translation: [ 2, 52.3, 0 ]
         rotation: [1, 0, 0, 90]
         type: mesh
-        url: "meshes_test/attachment_socket_4_4.stl"
+        url: "meshes/universal/attachment_socket_4_4_mm.stl"
         scale : 0.001
         color: [0.90, 0.80, 0.80]
     collision:
       -
         type: mesh
-        url: "meshes_test/long_hone.stl"
+        url: "meshes/x_series/long_hone_mm.stl"
         scale : 0.001
       -
         translation: [ 2, 52.3, 0 ]
@@ -1009,20 +1009,20 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_test/test_long_side.stl"
+        url: "meshes/x_series/long_frame_mm.stl"
         scale : 0.001
       -
         translation: [ 2, -12., -22.5 ]
         # box: [ 32.0, 40.0, 1. ]
         rotation: [1, 0, 0, 180]
         type: mesh
-        url: "meshes_test/attachment_plug_4_5.stl"
+        url: "meshes/universal/attachment_plug_4_5_mm.stl"
         scale : 0.001
         color: [0.80, 0.90, 0.90]
     collision:
       -
         type: mesh
-        url: "meshes_test/test_long_side.stl"
+        url: "meshes/x_series/long_frame_mm.stl"
         scale : 0.001
       -
         translation: [ 2, -12., -22.5 ]
@@ -1149,19 +1149,19 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_test/test_long_side.stl"
+        url: "meshes/x_series/long_frame_mm.stl"
         scale : 0.001
       -
         translation: [ 2, -12., -23.5 ]
         rotation: [1, 0, 0, 0]
         type: mesh
-        url: "meshes_test/attachment_socket_4_5.stl"
+        url: "meshes/universal/attachment_socket_4_5_mm.stl"
         scale : 0.001
         color: [0.90, 0.80, 0.80]
     collision:
       -
         type: mesh
-        url: "meshes_test/test_long_side.stl"
+        url: "meshes/x_series/long_frame_mm.stl"
         scale : 0.001
       -
         translation: [ 2, -12., -23.5 ]
@@ -1288,20 +1288,20 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_test/bottom_mounter.stl"
+        url: "meshes/x_series/bottom_mounter_mm.stl"
         scale : 0.001
         color: [0.95, 0.95, 0.95]
       -
         translation: [ -20.5, -12.0, 0 ]
         rotation: [-0.57735, -0.57735, 0.57735, 120.0]
         type: mesh
-        url: "meshes_test/attachment_plug_3_4.stl"
+        url: "meshes/universal/attachment_plug_3_4_mm.stl"
         scale : 0.001
         color: [0.80, 0.90, 0.90]
     collision:
       -
         type: mesh
-        url: "meshes_test/bottom_mounter.stl"
+        url: "meshes/x_series/bottom_mounter_mm.stl"
         scale : 0.001
       -
         translation: [ -20.5, -12.0, 0 ]
@@ -1383,20 +1383,20 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_test/bottom_mounter.stl"
+        url: "meshes/x_series/bottom_mounter_mm.stl"
         scale : 0.001
         color: [0.95, 0.95, 0.95]
       -
         translation: [ -21.5, -12.0, 0 ]
         rotation: [0.57735, 0.57735, 0.57735, 120.0]
         type: mesh
-        url: "meshes_test/attachment_socket_3_4.stl"
+        url: "meshes/universal/attachment_socket_3_4_mm.stl"
         scale : 0.001
         color: [0.90, 0.80, 0.80]
     collision:
       -
         type: mesh
-        url: "meshes_test/bottom_mounter.stl"
+        url: "meshes/x_series/bottom_mounter_mm.stl"
         scale : 0.001
       -
         translation: [ -21.5, -12.0, 0 ]
@@ -1477,12 +1477,12 @@ PartsSettings:
   #   visual:
   #     -
   #       type: mesh
-  #       url: "meshes_test/two_side_frame.stl"
+  #       url: "meshes/x_series/two_side_frame.stl"
   #       scale : 0.001
   #   collision:
   #     -
   #       type: mesh
-  #       url: "meshes_test/two_side_frame.stl"
+  #       url: "meshes/x_series/two_side_frame.stl"
   #       scale : 0.001
   #   mass-param:
   #     mass: 5.695
@@ -1517,12 +1517,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/fr12_s102_m.stl"
+        url: "meshes/x_series/fr12_s102_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes_xseries/fr12_s102_m.stl"
+        url: "meshes/x_series/fr12_s102_m.stl"
         scale : 1
     mass-param:
       mass: 5.695
@@ -1552,12 +1552,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/fr12_s102_p_m.stl"
+        url: "meshes/x_series/fr12_s102_p_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes_xseries/fr12_s102_p_m.stl"
+        url: "meshes/x_series/fr12_s102_p_m.stl"
         scale : 1
     mass-param:
       mass: 9.852
@@ -1642,12 +1642,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/fr12_s102_s_m.stl"
+        url: "meshes/x_series/fr12_s102_s_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes_xseries/fr12_s102_s_m.stl"
+        url: "meshes/x_series/fr12_s102_s_m.stl"
         scale : 1
     mass-param:
       mass: 7.134
@@ -1732,12 +1732,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/fr12_h101_plug_m.stl"
+        url: "meshes/x_series/fr12_h101_plug_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes_xseries/fr12_h101_plug_m.stl"
+        url: "meshes/x_series/fr12_h101_plug_m.stl"
         scale : 1
     mass-param:
       mass: 14.395
@@ -1817,12 +1817,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/fr12_h101_socket_m.stl"
+        url: "meshes/x_series/fr12_h101_socket_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes_xseries/fr12_h101_socket_m.stl"
+        url: "meshes/x_series/fr12_h101_socket_m.stl"
         scale : 1
     mass-param:
       mass: 11.677
@@ -1902,12 +1902,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/fr12_s101_socket_mm.stl"
+        url: "meshes/x_series/fr12_s101_socket_mm.stl"
         scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes_xseries/fr12_s101_socket_mm.stl"
+        url: "meshes/x_series/fr12_s101_socket_mm.stl"
         scale : 0.001
     mass-param:
       mass: 11.061
@@ -2057,12 +2057,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/fr12_s101_plug_mm.stl"
+        url: "meshes/x_series/fr12_s101_plug_mm.stl"
         scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes_xseries/fr12_s101_plug_mm.stl"
+        url: "meshes/x_series/fr12_s101_plug_mm.stl"
         scale : 0.001
     mass-param:
       mass: 10.885
@@ -2212,13 +2212,13 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/omni_wheel_shaft_m.stl"
-        scale : 1
+        url: "meshes/x_series/omni_wheel_shaft_mm.stl"
+        scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes_xseries/omni_wheel_shaft_m.stl"
-        scale : 1
+        url: "meshes/x_series/omni_wheel_shaft_mm.stl"
+        scale : 0.001
     mass-param:
       mass: 5.733
       center-of-mass: [-0.018, 0.017, 12.915]
@@ -2242,12 +2242,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/fr12_h103_plug_m.stl"
+        url: "meshes/x_series/fr12_h103_plug_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes_xseries/fr12_h103_plug_m.stl"
+        url: "meshes/x_series/fr12_h103_plug_m.stl"
         scale : 1
     mass-param:
       mass: 20.328
@@ -2327,12 +2327,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/fr12_h103_socket_m.stl"
+        url: "meshes/x_series/fr12_h103_socket_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes_xseries/fr12_h103_socket_m.stl"
+        url: "meshes/x_series/fr12_h103_socket_m.stl"
         scale : 1
     mass-param:
       mass: 17.609
@@ -2412,12 +2412,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/bottom_mounter_mm.stl"
+        url: "meshes/x_series/bottom_mounter_old_mm.stl"
         scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes_xseries/bottom_mounter_mm.stl"
+        url: "meshes/x_series/bottom_mounter_old_mm.stl"
         scale : 0.001
     mass-param:
       mass: 6.134
@@ -2480,12 +2480,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/fixed_finger.stl"
+        url: "meshes/x_series/fixed_finger_mm.stl"
         scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes_xseries/fixed_finger.stl"
+        url: "meshes/x_series/fixed_finger_mm.stl"
         scale : 0.001
     mass-param:
       mass: 26.872
@@ -2603,12 +2603,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes_xseries/moveable_finger.stl"
+        url: "meshes/x_series/moveable_finger_mm.stl"
         scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes_xseries/moveable_finger.stl"
+        url: "meshes/x_series/moveable_finger_mm.stl"
         scale : 0.001
     mass-param:
       mass: 23.959
@@ -2627,14 +2627,14 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/ax-12a.stl"
+        url: "meshes/a_series/ax-12a_m.stl"
         scale : 1
     collision:
       -
         #translation: [-12.5, -29, -20.0]
         #box: [25.0, 50.0, 40.0] # shift -13.5mm at y-axis
         type: mesh
-        url: "meshes/ax-12a.stl"
+        url: "meshes/a_series/ax-12a_m.stl"
         scale : 1
     mass-param:
       mass: 54.6
@@ -2700,14 +2700,14 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/ax-12a.stl"
+        url: "meshes/a_series/ax-12a_m.stl"
         scale : 1
     collision:
       -
         #translation: [-12.5, -29, -20.0]
         #box: [25.0, 50.0, 40.0] # shift -13.5mm at y-axis
         type: mesh
-        url: "meshes/ax-12a.stl"
+        url: "meshes/a_series/ax-12a_m.stl"
         scale : 1
     mass-param:
       mass: 54.6
@@ -2773,12 +2773,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/ax-12a-f2.stl"
+        url: "meshes/a_series/ax-12a-f2_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/ax-12a-f2.stl"
+        url: "meshes/a_series/ax-12a-f2_m.stl"
         scale : 1
     mass-param:
       mass: 11.368
@@ -2808,12 +2808,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/ax-12a-f3.stl"
+        url: "meshes/a_series/ax-12a-f3_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/ax-12a-f3.stl"
+        url: "meshes/a_series/ax-12a-f3_m.stl"
         scale : 1
     mass-param:
       mass: 3.764
@@ -2836,12 +2836,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/ax-12a-f3-p.stl"
+        url: "meshes/a_series/ax-12a-f3-p_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/ax-12a-f3-p.stl"
+        url: "meshes/a_series/ax-12a-f3-p_m.stl"
         scale : 1
     mass-param:
       mass: 7.033
@@ -3035,12 +3035,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/FP04-F53_m.stl"
+        url: "meshes/a_series/FP04-F53_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/FP04-F53_m.stl"
+        url: "meshes/a_series/FP04-F53_m.stl"
         scale : 1
     mass-param:
       mass: 1.918
@@ -3057,12 +3057,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/FP04-F53-s_m.stl"
+        url: "meshes/a_series/FP04-F53-s_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/FP04-F53-s_m.stl"
+        url: "meshes/a_series/FP04-F53-s_m.stl"
         scale : 1
     mass-param:
       mass: 1.918
@@ -3125,12 +3125,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/ax-12a-f3-s.stl"
+        url: "meshes/a_series/ax-12a-f3-s_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/ax-12a-f3-s.stl"
+        url: "meshes/a_series/ax-12a-f3-s_m.stl"
         scale : 1
     mass-param:
       mass: 6.01
@@ -3324,12 +3324,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/ax-12a-f3-s_3x3_m.stl"
+        url: "meshes/a_series/ax-12a-f3-s_3x3_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/ax-12a-f3-s_3x3_m.stl"
+        url: "meshes/a_series/ax-12a-f3-s_3x3_m.stl"
         scale : 1
     mass-param:
       mass: 4.776
@@ -3391,12 +3391,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/FP04-F4_m.stl"
+        url: "meshes/a_series/FP04-F4_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/FP04-F4_m.stl"
+        url: "meshes/a_series/FP04-F4_m.stl"
         scale : 1
     mass-param:
       mass: 13.945
@@ -3417,12 +3417,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/FP04-F4-P_m.stl"
+        url: "meshes/a_series/FP04-F4-P_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/FP04-F4_m.stl"
+        url: "meshes/a_series/FP04-F4_m.stl"
         scale : 1
     mass-param:
       mass: 16.629
@@ -3475,12 +3475,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/FP04-F2-P_m.stl"
+        url: "meshes/a_series/FP04-F2-P_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/FP04-F2-P_m.stl"
+        url: "meshes/a_series/FP04-F2-P_m.stl"
         scale : 1
     mass-param:
       mass: 10.644
@@ -3533,12 +3533,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/FP04-F2-S_m.stl"
+        url: "meshes/a_series/FP04-F2-S_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/FP04-F2-S_m.stl"
+        url: "meshes/a_series/FP04-F2-S_m.stl"
         scale : 1
     mass-param:
       mass: 10.644
@@ -3603,12 +3603,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/FP04-F2-P_3x3_m.stl"
+        url: "meshes/a_series/FP04-F2-P_3x3_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/FP04-F2-P_3x3_m.stl"
+        url: "meshes/a_series/FP04-F2-P_3x3_m.stl"
         scale : 1
     mass-param:
       mass: 10.54
@@ -3654,12 +3654,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/ultrasonic.stl"
+        url: "meshes/universal/ultrasonic_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/ultrasonic.stl"
+        url: "meshes/universal/ultrasonic_m.stl"
         scale : 1
     mass-param:
       mass: 1.0
@@ -3685,12 +3685,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/tof-sensor.stl"
+        url: "meshes/universal/tof-sensor_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/tof-sensor.stl"
+        url: "meshes/universal/tof-sensor_m.stl"
         scale : 1
     mass-param:
       mass: 1.0
@@ -3716,12 +3716,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/sensor-mounter_m.stl"
+        url: "meshes/universal/sensor-mounter_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/sensor-mounter_m.stl"
+        url: "meshes/universal/sensor-mounter_m.stl"
         scale : 1
     mass-param:
       mass: 3.584
@@ -3865,12 +3865,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/grove_color_sensor_m.stl"
+        url: "meshes/universal/grove_color_sensor_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/grove_color_sensor_m.stl"
+        url: "meshes/universal/grove_color_sensor_m.stl"
         scale : 1
     mass-param:
       mass: 2.945
@@ -3896,12 +3896,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/grove_sensor_mounter_m.stl"
+        url: "meshes/universal/grove_sensor_mounter_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/grove_sensor_mounter_m.stl"
+        url: "meshes/universal/grove_sensor_mounter_m.stl"
         scale : 1
     mass-param:
       mass: 6.297
@@ -3965,12 +3965,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/camera_module_mm.stl"
+        url: "meshes/universal/camera_module_mm.stl"
         scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes/camera_module_mm.stl"
+        url: "meshes/universal/camera_module_mm.stl"
         scale : 0.001
     mass-param:
       mass: 1.0
@@ -4096,12 +4096,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/vehicle_base_m.stl"
+        url: "meshes/universal/vehicle_base_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/vehicle_base_m.stl"
+        url: "meshes/universal/vehicle_base_m.stl"
         scale : 1
     mass-param:
       mass: 22.675
@@ -4355,12 +4355,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/vehicle_base_pp_m.stl"
+        url: "meshes/universal/vehicle_base_pp_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/vehicle_base_pp_m.stl"
+        url: "meshes/universal/vehicle_base_pp_m.stl"
         scale : 1
     mass-param:
       mass: 22.675
@@ -4724,12 +4724,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/vehicle_base_pp_r1_mm.stl"
+        url: "meshes/universal/vehicle_base_pp_r1_mm.stl"
         scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes/vehicle_base_pp_r1_mm.stl"
+        url: "meshes/universal/vehicle_base_pp_r1_mm.stl"
         scale : 0.001
     mass-param:
       mass: 33.714
@@ -5433,12 +5433,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/vehicle_base_ps_mm.stl"
+        url: "meshes/universal/vehicle_base_ps_mm.stl"
         scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes/vehicle_base_ps_mm.stl"
+        url: "meshes/universal/vehicle_base_ps_mm.stl"
         scale : 0.001
     mass-param:
       mass: 22.869
@@ -6741,12 +6741,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/omni_shaft_m.stl"
+        url: "meshes/a_series/omni_shaft_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/omni_shaft_m.stl"
+        url: "meshes/a_series/omni_shaft_m.stl"
         scale : 1
     mass-param:
       mass: 1.0
@@ -6772,12 +6772,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/omni_wheel_m.stl"
+        url: "meshes/universal/omni_wheel_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/omni_wheel_m.stl"
+        url: "meshes/universal/omni_wheel_m.stl"
         scale : 1
     mass-param:
       mass: 54.797
@@ -6796,12 +6796,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/angle_2x2_m.stl"
+        url: "meshes/universal/angle_2x2_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/angle_2x2_m.stl"
+        url: "meshes/universal/angle_2x2_m.stl"
         scale : 1
     mass-param:
       mass: 1.889
@@ -6855,12 +6855,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/plate_2x2_pp_m.stl"
+        url: "meshes/universal/plate_2x2_pp_m.stl"
         scale : 1
     collision:
       -
         type: mesh
-        url: "meshes/plate_2x2_pp_m.stl"
+        url: "meshes/universal/plate_2x2_pp_m.stl"
         scale : 1
     mass-param:
       mass: 1.395
@@ -6913,12 +6913,12 @@ PartsSettings:
     visual:
       -
         type: mesh
-        url: "meshes/diagonal_bracket_mm.stl"
+        url: "meshes/universal/diagonal_bracket_mm.stl"
         scale : 0.001
     collision:
       -
         type: mesh
-        url: "meshes/diagonal_bracket_mm.stl"
+        url: "meshes/universal/diagonal_bracket_mm.stl"
         scale : 0.001
     mass-param:
       mass: 1.772
