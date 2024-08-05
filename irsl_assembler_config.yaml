@@ -16,7 +16,7 @@ GeneralSettings:
 ##   connecting-type-match-list:
 ##   connecting-configuration-list:
 ConnectingConstraintSettings:
-  connecting-type-list: [PC1, PC2, PC4, SC1, SC2, SC4, HORN, HORN-F2, HORN-F4, SERVO_SIDE, FRAME_F3_SERVO, FRAME, LEGO-2P, LEGO-2S, WHEEL_SHAFT, OMNI_WHEEL, HORN_X, ROTOR_X, SERVO_ASIDE_X, FRAME_ASIDE_X, SERVO_BSIDE_X, FRAME_BSIDE_X, SERVO_CSIDE_X, FRAME_CSIDE_X, GROVE_SENSOR, GROVE_MOUNTER]
+  connecting-type-list: [PC1, PC2, PC4, SC1, SC2, SC4, HORN, HORN-F2, HORN-F4, SERVO_SIDE, FRAME_F3_SERVO, FRAME, LEGO-2P, LEGO-2S, WHEEL_SHAFT, OMNI_WHEEL, HORN_X, ROTOR_X, SERVO_ASIDE_X, FRAME_ASIDE_X, SERVO_BSIDE_X, FRAME_BSIDE_X, SERVO_CSIDE_X, FRAME_CSIDE_X, GROVE_SENSOR, GROVE_MOUNTER, M2_HOLE]
   ## pair: [a, b] ## configuration represents transoform from a to b
   connecting-type-match-list:
     -
@@ -64,6 +64,9 @@ ConnectingConstraintSettings:
     -
       pair: [GROVE_SENSOR, GROVE_MOUNTER]
       allowed-configuration: [fixed, invert]
+    -
+      pair: [M2_HOLE, M2_HOLE]
+      allowed-configuration: [fixed, invert, rotate-90, rotate90]
   ##
   connecting-configuration-list:
     -
@@ -144,7 +147,7 @@ PanelSettings: ## just for choreonoid
       # parts: [vehicle-base, vehicle-base-pp,  vehicle-base-pp-r1, vehicle-base-ps, omni-wheel]
       parts: [vehicle-base-pp-r1, vehicle-base-ps, omni-shaft-x, omni-wheel]
     - name: Sensor Parts
-      parts: [sensor-mounter, grove-sensor-mounter, ultrasonic-sensor, tof-sensor, grove-color-sensor, camera-module]
+      parts: [sensor-mounter, grove-sensor-mounter, ultrasonic-sensor, tof-sensor, grove-color-sensor, USB-camera-module, USB-camera-mountor]
     - name: Special Parts
       parts: [angle_2_2, plate_2_2_pp, diagonal_bracket]
     - name: Main Blocks
@@ -4089,6 +4092,171 @@ PartsSettings:
       translation: [0, 0, 16]
       rotation: [ 0, 0, 1, 0 ]
       device-mapping: {frame_rate: 30, optical_frame: 'cv', width: 640, height: 480, field_of_view: 60, near_clip_distance: 0.01, far_clip_distance: 100, format: 'COLOR', min_distance: 0.01, max_distance: 10, detection_rate: 1, error_deviation: 0}
+ -
+    type: USB-camera-module
+    # class: USB-camera-module
+    description: USB camera module
+    visual:
+      -
+        type: mesh
+        url: "meshes/USB_camera_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes/USB_camera_mm.stl"
+        scale : 0.001
+    mass-param:
+      mass: 1.0
+      center-of-mass: [0.0, 0.0, 0.0]
+      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+    connecting-points :
+    -
+      name: m2_0
+      types : [M2_HOLE]
+      translation: [-14.0, -14.0, 0.0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: m2_1
+      types : [M2_HOLE]
+      translation: [-14.0, 14.0, 0.0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: m2_2
+      types : [M2_HOLE]
+      translation: [14.0, -14.0, 0.0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: m2_3
+      types : [M2_HOLE]
+      translation: [14.0, 14.0, 0.0]
+      rotation: [1., 0., 0., 0.0]
+    extra-data:
+    -
+      name: Camera
+      type: COLOR
+      translation: [0, 0, 16.9]
+      rotation: [ 1, 0, 0, 0 ]
+      device-mapping: {frame_rate: 30, optical_frame: 'cv', width: 640, height: 480, field_of_view: 60, near_clip_distance: 0.01, far_clip_distance: 100, format: 'COLOR', min_distance: 0.01, max_distance: 10, detection_rate: 1, error_deviation: 0}
+  -
+    type: USB-camera-mountor
+    # class: USB-camera-mountor
+    description: USB camera mountor
+    visual:
+      -
+        type: mesh
+        url: "meshes/camera_mounter_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes/camera_mounter_mm.stl"
+        scale : 0.001
+    mass-param:
+      mass: 1.0
+      center-of-mass: [0.0, 0.0, 0.0]
+      inertia-tensor: [1, 0.0, 0.0,  0.0, 1, 0.0,  0.0, 0.0, 1]
+    connecting-points :
+    -
+      name: s1_0_0
+      types : [SC1]
+      translation: [-12.0, -12.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_0_1
+      types : [SC1]
+      translation: [-12.0, -4.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_0_2
+      types : [SC1]
+      translation: [-12.0, 4.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_0_3
+      types : [SC1]
+      translation: [-12.0, 12.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_1_0
+      types : [SC1]
+      translation: [-4.0, -12.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_1_1
+      types : [SC1]
+      translation: [-4.0, -4.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_1_2
+      types : [SC1]
+      translation: [-4.0, 4.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_1_3
+      types : [SC1]
+      translation: [-4.0, 12.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_2_0
+      types : [SC1]
+      translation: [4.0, -12.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_2_1
+      types : [SC1]
+      translation: [4.0, -4.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_2_2
+      types : [SC1]
+      translation: [4.0, 4.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_2_3
+      types : [SC1]
+      translation: [4.0, 12.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_3_0
+      types : [SC1]
+      translation: [12.0, -12.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_3_1
+      types : [SC1]
+      translation: [12.0, -4.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_3_2
+      types : [SC1]
+      translation: [12.0, 4.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: s1_3_3
+      types : [SC1]
+      translation: [12.0, 12.0, 0]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: m2_0
+      types : [M2_HOLE]
+      translation: [-14.0, -14.0, 18.212]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: m2_1
+      types : [M2_HOLE]
+      translation: [-14.0, 14.0, 18.212]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: m2_2
+      types : [M2_HOLE]
+      translation: [14.0, -14.0, 18.212]
+      rotation: [1., 0., 0., 0.0]
+    -
+      name: m2_3
+      types : [M2_HOLE]
+      translation: [14.0, 14.0, 18.212]
+      rotation: [1., 0., 0., 0.0]
   -
     type: vehicle-base
     class: Base plate (deprecated)
