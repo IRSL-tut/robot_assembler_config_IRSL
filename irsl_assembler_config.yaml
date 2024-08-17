@@ -4092,7 +4092,7 @@ PartsSettings:
       translation: [0, 0, 16]
       rotation: [ 0, 0, 1, 0 ]
       device-mapping: {frame_rate: 30, optical_frame: 'cv', width: 640, height: 480, field_of_view: 60, near_clip_distance: 0.01, far_clip_distance: 100, format: 'COLOR', min_distance: 0.01, max_distance: 10, detection_rate: 1, error_deviation: 0}
- -
+  -
     type: USB-camera-module
     # class: USB-camera-module
     description: USB camera module
