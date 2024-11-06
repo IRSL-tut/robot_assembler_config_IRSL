@@ -140,7 +140,7 @@ PanelSettings: ## just for choreonoid
     - name: Servo Parts
       parts: [XL-430, Hinge_Short_Plug, Hinge_Short_Socket, Hinge_Long_Plug, Hinge_Long_Socket,  omni-shaft-x, Moveable_Finger]
     - name: Frames
-      parts: [Frame_Short_Plug, Frame_Short_Socket, Frame_Short, Frame_Long_Plug, Frame_Long_Socket, Frame_Bottom_Plug, Frame_Bottom_Socket, Fixed_Finger]
+      parts: [Frame_Short_Plug, Frame_Short_Socket, Frame_Short, Frame_Long_Plug, Frame_Long_Socket, Frame_Long, Frame_Bottom_Plug, Frame_Bottom_Socket, Frame_L_TYPE, Fixed_Finger]
     # - name: Servo Parts (X-series) OLD
     #   parts: [XL-430, FR12_S102, FR12_S102_P, FR12_S102_S, FR12_S101_P, FR12_S101_S, Bottom_mounter, FR12_H101_P, FR12_H101_S, FR12_H103_P, FR12_H103_S, omni-shaft-x, Fixed_Finger, Moveable_Finger]
     - name : Vehicle Parts
@@ -1006,6 +1006,40 @@ PartsSettings:
       translation: [14.0, 53.8, 12.0]
       rotation: [1.0, 0.0, 0.0, 90.0]
   -
+    type: Frame_Long
+    class: Side-Frame Long  ( HORN )
+    description: Long side frame for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes/x_series/long_frame_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes/x_series/long_frame_mm.stl"
+        scale : 0.001
+    mass-param:
+      mass: 5.695
+      center-of-mass: [-6.586E-05, 0.00, 17.445]
+      inertia-tensor: [443.252, -2.374E-10, 0.00, -2.374E-10, 1268.324, 0.0, 0.00, 0.0, 1577.09]
+    connecting-points :
+    -
+      name: connect_point
+      types: [FRAME_BSIDE_X]
+      translation: [17.0, -32.0, -11.0]
+      rotation: [0.7071, 0.0,  0.7071, 180.0]
+    -
+      name: connect_point2
+      types: [FRAME_BSIDE_X]
+      translation: [-17.0, 8.0, -11.0]
+      rotation: [0., 1., 0., -90.]
+    -
+      name: horn
+      types : [HORN_X]
+      translation: [0.0, -12.0, -22.0]
+      rotation: [1., 0., 0., 0.0]
+  -
     type: Frame_Long_Plug
     class: Side-Frame Long  ( Plug )
     description: Long side frame for X-series servomotor
@@ -1284,6 +1318,262 @@ PartsSettings:
       types : [SC1]
       translation: [14.0, 4.0, -25.0]
       rotation: [0.0, 1.0, 0.0, 0.0]
+  -
+    type: Frame_L_TYPE
+    class: L type Frame(Socket)
+    description: L type frame for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes/x_series/long_frame_mm.stl"
+        scale : 0.001
+      -
+        translation: [ 2, -12., -23.5 ]
+        rotation: [1, 0, 0, 0]
+        type: mesh
+        url: "meshes/universal/attachment_socket_4_5_mm.stl"
+        scale : 0.001
+        color: [0.90, 0.80, 0.80]
+      -
+        type: mesh
+        url: "meshes/x_series/short_frame_mm.stl"
+        scale : 0.001
+        color: [0.95, 0.95, 0.95]
+      -
+        translation: [ 2.0, -42.75, 0 ]
+        rotation: [1, 0, 0, -90]
+        type: mesh
+        url: "meshes/universal/attachment_socket_4_4_mm.stl"
+        scale : 0.001
+        color: [0.90, 0.80, 0.80]
+      -
+        translation: [ 0.0, -38.25, -18.0 ]
+        box: [ 39.6, 6.0, 8.0 ]
+        color: [0.95, 0.95, 0.95]
+    collision:
+      -
+        type: mesh
+        url: "meshes/x_series/long_frame_mm.stl"
+        scale : 0.001
+      -
+        translation: [ 2, -12., -23.5 ]
+        box: [ 32.0, 40.0, 3. ]
+      -
+        type: mesh
+        url: "meshes/x_series/short_frame_mm.stl"
+        scale : 0.001
+      -
+        translation: [ 2.0, -42.75, 0 ]
+        box: [ 32.0, 3.0, 32.0 ]
+      -
+        translation: [ 0.0, -38.25, -18.0 ]
+        box: [ 39.6, 6.0, 8.0 ]
+        color: [0.95, 0.95, 0.95]
+    mass-param:
+      mass: 5.695
+      center-of-mass: [-6.586E-05, 0.00, 17.445]
+      inertia-tensor: [443.252, -2.374E-10, 0.00, -2.374E-10, 1268.324, 0.0, 0.00, 0.0, 1577.09]
+    connecting-points :
+    -
+      name: connect_point
+      types: [FRAME_BSIDE_X]
+      translation: [17.0, -32.0, -11.0]
+      rotation: [0.7071, 0.0,  0.7071, 180.0]
+    -
+      name: connect_point2
+      types: [FRAME_BSIDE_X]
+      translation: [-17.0, 8.0, -11.0]
+      rotation: [0., 1., 0., -90.]
+    -
+      name: socket_0_0
+      types : [SC1]
+      translation: [-10.0, -28.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_0_1
+      types : [SC1]
+      translation: [-10.0, -20.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_0_2
+      types : [SC1]
+      translation: [-10.0, -12.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_0_3
+      types : [SC1]
+      translation: [-10.0, -4.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_0_4
+      types : [SC1]
+      translation: [-10.0, 4.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_1_0
+      types : [SC1]
+      translation: [-2.0, -28.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_1_1
+      types : [SC1]
+      translation: [-2.0, -20.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_1_2
+      types : [SC1]
+      translation: [-2.0, -12.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_1_3
+      types : [SC1]
+      translation: [-2.0, -4.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_1_4
+      types : [SC1]
+      translation: [-2.0, 4.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_2_0
+      types : [SC1]
+      translation: [6.0, -28.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_2_1
+      types : [SC1]
+      translation: [6.0, -20.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_2_2
+      types : [SC1]
+      translation: [6.0, -12.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_2_3
+      types : [SC1]
+      translation: [6.0, -4.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_2_4
+      types : [SC1]
+      translation: [6.0, 4.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_3_0
+      types : [SC1]
+      translation: [14.0, -28.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_3_1
+      types : [SC1]
+      translation: [14.0, -20.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_3_2
+      types : [SC1]
+      translation: [14.0, -12.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_3_3
+      types : [SC1]
+      translation: [14.0, -4.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: socket_3_4
+      types : [SC1]
+      translation: [14.0, 4.0, -25.0]
+      rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+      name: side_connect_point1_2
+      types: [FRAME_ASIDE_X]
+      translation: [17.0, -32.05, 11.2]
+      rotation: [0.57735, 0.57735, 0.57735, 120.0]
+    -
+      name: side_connect_point2_2
+      types: [FRAME_ASIDE_X]
+      translation: [-17.0, -32.05, -10.8]
+      rotation: [-0.57735, -0.57735, 0.57735, 120.0]
+    -
+      name: socket_0_0_2
+      types : [SC1]
+      translation: [-10.0, -44.25, -12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_0_1_2
+      types : [SC1]
+      translation: [-10.0, -44.25, -4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_0_2_2
+      types : [SC1]
+      translation: [-10.0, -44.25, 4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_0_3_2
+      types : [SC1]
+      translation: [-10.0, -44.25, 12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_1_0_2
+      types : [SC1]
+      translation: [-2.0, -44.25, -12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_1_1_2
+      types : [SC1]
+      translation: [-2.0, -44.25, -4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_1_2_2
+      types : [SC1]
+      translation: [-2.0, -44.25, 4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_1_3_2
+      types : [SC1]
+      translation: [-2.0, -44.25, 12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_2_0_2
+      types : [SC1]
+      translation: [6.0, -44.25, -12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_2_1_2
+      types : [SC1]
+      translation: [6.0, -44.25, -4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_2_2_2
+      types : [SC1]
+      translation: [6.0, -44.25, 4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_2_3_2
+      types : [SC1]
+      translation: [6.0, -44.25, 12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_3_0_2
+      types : [SC1]
+      translation: [14.0, -44.25, -12.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_3_1_2
+      types : [SC1]
+      translation: [14.0, -44.25, -4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_3_2_2
+      types : [SC1]
+      translation: [14.0, -44.25, 4.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: socket_3_3_2
+      types : [SC1]
+      translation: [14.0, -44.25, 12.0]
+      rotation: [1., 0., 0., -90.0]
   -
     type: Frame_Bottom_Plug
     class: Bottom-Frame ( Plug )
