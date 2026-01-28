@@ -1,0 +1,38 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+  <filter name="Simplification: Clustering Decimation">
+    <!--Param description="Cell Size"
+           max="51.0321" type="RichAbsPerc" min="0" name="Threshold" value="0.51032"/-->
+    <Param description="Affect only selected faces"
+           type="RichBool" name="Selected" value="false"/>
+  </filter>
+  <filter name="Simplification: Quadric Edge Collapse Decimation">
+    <!--Param description="Target number of faces"
+           type="RichInt" name="TargetFaceNum" value="2035"/-->
+    <Param description="Percentage reduction (0..1)"
+           type="RichFloat" name="TargetPerc" value="0"/>
+    <Param description="Quality threshold"
+           type="RichFloat" name="QualityThr" value="0.14"/>
+    <Param description="Preserve Boundary of the mesh"
+           type="RichBool" name="PreserveBoundary" value="false"/>
+    <Param description="Boundary Preserving Weight"
+           type="RichFloat" name="BoundaryWeight" value="1"/>
+    <Param description="Preserve Normal"
+           type="RichBool" name="PreserveNormal" value="true"/>
+    <Param description="Preserve Topology"
+           type="RichBool" name="PreserveTopology" value="false"/>
+    <Param description="Optimal position of simplified vertices"
+           type="RichBool" name="OptimalPlacement" value="true"/>
+    <Param description="Planar Simplification"
+           type="RichBool" name="PlanarQuadric" value="true"/>
+    <Param description="Planar Simp. Weight"
+           type="RichFloat" name="PlanarWeight" value="0.001"/>
+    <Param description="Weighted Simplification"
+           type="RichBool" name="QualityWeight" value="false"/>
+    <Param description="Post-simplification cleaning"
+           type="RichBool" name="AutoClean" value="true"/>
+    <Param description="Simplify only selected faces"
+           type="RichBool" name="Selected" value="false"/>
+  </filter>
+  <filter name="Normalize Face Normals"/>
+</FilterScript>

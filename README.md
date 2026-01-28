@@ -2,12 +2,37 @@
 
 Setting files for robot_assembler_plugin ( https://github.com/IRSL-tut/robot_assembler_plugin )
 
+# meshes_small, meshes_convex を作る
+
+## meshes_small
+
+```
+scripts/gen_small_files.sh
+```
+
+meshlab : https://www.meshlab.net/
+
+## meshes_convex
+
+```
+scripts/gen_convex_files.sh
+```
+
+CoACD : https://colin97.github.io/CoACD/
+
+## リンクを作る
+
+```
+scripts/link_dirs.sh [raw]
+```
 
 # mass-paramの計算方法
 特に指定のないものについては物体密度はFusion360のプラスチックの密度と同じ1.29(g/cm^3)で計算を行う．
+
 ## Dynamixel
-公式のページを参考にする．  
+公式のページを参考にする．
 XL430-W250は[このページ](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/)の一番下
+
 ## STLファイル(Fusion360を用いる場合)
 1. 作成したボディの物理マテリアルを「プラスチック」に変更する．変更方法は[ここ](http://fusion360.blog.jp/model/modify/physical-material)を参考にする
 1. [ボディのプロパティ](https://www.autodesk.co.jp/support/technical/article/caas/sfdcarticles/sfdcarticles/JPN/How-to-Find-Mass-Properties-in-Fusion-360.html)からCoGや重心回りの慣性テンソルを取得する.
