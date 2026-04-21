@@ -16,7 +16,7 @@ GeneralSettings:
 ##   connecting-type-match-list:
 ##   connecting-configuration-list:
 ConnectingConstraintSettings:
-  connecting-type-list: [PC1, PC2, PC4, SC1, SC2, SC4, HORN, HORN-F2, HORN-F4, SERVO_SIDE, FRAME_F3_SERVO, FRAME, LEGO-2P, LEGO-2S, WHEEL_SHAFT, OMNI_WHEEL, HORN_X, ROTOR_X, SERVO_ASIDE_X, FRAME_ASIDE_X, SERVO_BSIDE_X, FRAME_BSIDE_X, SERVO_CSIDE_X, FRAME_CSIDE_X, GROVE_SENSOR, GROVE_MOUNTER, M2_HOLE]
+  connecting-type-list: [PC1, PC2, PC4, SC1, SC2, SC4, HORN, HORN-F2, HORN-F4, SERVO_SIDE, FRAME_F3_SERVO, FRAME, LEGO-2P, LEGO-2S, WHEEL_SHAFT, OMNI_WHEEL, HORN_X, ROTOR_X, SERVO_ASIDE_X, FRAME_ASIDE_X, SERVO_BSIDE_X, FRAME_BSIDE_X, SERVO_CSIDE_X, FRAME_CSIDE_X, GROVE_SENSOR, GROVE_MOUNTER, M2_HOLE, M25_HOLE]
   ## pair: [a, b] ## configuration represents transoform from a to b
   connecting-type-match-list:
     -
@@ -66,6 +66,9 @@ ConnectingConstraintSettings:
       allowed-configuration: [fixed, invert]
     -
       pair: [M2_HOLE, M2_HOLE]
+      allowed-configuration: [fixed, invert, rotate-90, rotate90]
+    -
+      pair: [M25_HOLE, M25_HOLE]
       allowed-configuration: [fixed, invert, rotate-90, rotate90]
   ##
   connecting-configuration-list:
@@ -137,6 +140,8 @@ ConnectingConstraintSettings:
 
 PanelSettings: ## just for choreonoid
   tab_list:
+    - name: Test
+      parts: [XM-540, Frame_Short_540, Hinge_Short_Plug_540_c, Hinge_Short_Plug_540_xm, Hinge_Short_Plug_540_xp, Hinge_Short_Plug_540_430_c,Hinge_Short_Plug_540_430_xm, Hinge_Short_Plug_540_430_xp, Hinge_Short_Plug_430_430_c,Hinge_Short_Plug_430_430_xm, Hinge_Short_Plug_430_430_xp,Hone2Front_540, Hone2Front_430]
     - name: Servo Parts
       parts: [XL-430, Hinge_Short_Plug, Hinge_Short_Socket, Hinge_Long_Plug, Hinge_Long_Socket,  omni-shaft-x, Moveable_Finger]
     - name: Frames
@@ -270,6 +275,26 @@ PartsSettings:
         types: [SERVO_BSIDE_X, SERVO_CSIDE_X]
         translation: [-11.0, -32.0, -36.0]
         rotation: [1.0, 0.0, 0.0, 180.0]
+    -
+        name: front-side-m25hole1
+        types: [M25_HOLE]
+        translation: [8.0, -35.25, -13]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole2
+        types: [M25_HOLE]
+        translation: [8.0, -35.25, -25]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole3
+        types: [M25_HOLE]
+        translation: [-8.0, -35.25, -13]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole4
+        types: [M25_HOLE]
+        translation: [-8.0, -35.25, -25]
+        rotation: [1.0, 0.0, 0.0, 90.0]
   -
     type: Frame_Short
     class: Side-Frame Short ( HORN )
@@ -20289,3 +20314,609 @@ PartsSettings:
         name: SK1_1_1
         types: [SC1]
         translation: [ 12.0, 12.0, -28.8]
+###
+  -
+    type: XM-540
+    class: Dynamixel XM-540
+    description: Servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/XM-540_mm.stl"
+        scale : 0.001
+        color: [0.25, 0.17, 0.17]
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/XM-540_mm.obj"
+        scale : 0.001
+    mass-param:
+      mass: 57.0
+      center-of-mass: [0.41966054, -15.387220, -17.474305]
+      inertia-tensor: [1.5493772e+04, -1.7514579e+02, -4.8111620e+01, -1.7514579e+02, 8.2528518e+03, -8.4924409e+02, -4.8111620e+01, -8.4924409e+02, 1.3741272e+04]
+    actuators:
+      -
+        name: horn
+        types: [ROTOR_X]
+        translation: [0.0, 0.0, 24.5]
+        rotation: [1.0, 0.0, 0.0, 0.0]
+        actuator-type: rotational
+        axis: z
+        limit: [-180, 180]
+    connecting-points :
+    -
+        name: bottom-side1
+        types: [SERVO_ASIDE_X]
+        translation: [13.5, -41.5, 22.0]
+        rotation: [0.0, 0.0, 1.0, 0.0]
+    -
+        name: bottom-side2
+        types: [SERVO_CSIDE_X]
+        translation: [13.5, 10.5, -22.0]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front-side-m25hole1
+        types: [M25_HOLE]
+        translation: [10.0, -44.75, 8.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole2
+        types: [M25_HOLE]
+        translation: [10.0, -44.75, -8.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole3
+        types: [M25_HOLE]
+        translation: [-10.0, -44.75, 8.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole4
+        types: [M25_HOLE]
+        translation: [-10.0, -44.75, -8.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+  -
+    type: Frame_Short_540
+    class: Side-Frame Short ( HORN )
+    description: Short side frame for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/short_frame_540_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/short_frame_540_mm.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 5.695
+      center-of-mass: [-6.586E-05, 0.00, 17.445]
+      inertia-tensor: [443.252, -2.374E-10, 0.00, -2.374E-10, 1268.324, 0.0, 0.00, 0.0, 1577.09]
+    connecting-points :
+    -
+      name: horn
+      types : [HORN_X]
+      translation: [0.0, -52, 0.0]
+      rotation: [1., 0., 0., -90.0]
+    -
+      name: side_connect_point1
+      types: [FRAME_ASIDE_X]
+      translation: [13.5, -41.5, 22.0]
+      rotation: [0.0, 0.0, 1.0, 0.0]
+  # -
+  #   type: Hinge_Short_Plug_540
+  #   # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+  #   class: Hinge Short ( Plug ) full
+  #   description: Short hinge frame with LEGO plugs for X-series servomotor
+  #   visual:
+  #     -
+  #       type: mesh
+  #       url: "meshes_vis/x_series/short_hone_540_mm.stl"
+  #       scale : 0.001
+  #   collision:
+  #     -
+  #       type: mesh
+  #       url: "meshes_col/x_series/short_hone_540_mm.obj"
+  #       scale : 0.001
+  #   mass-param:
+  #     mass: 14.395
+  #     center-of-mass: [4.299E-07, 23.033, 0.00]
+  #     inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+  #   connecting-points :
+  #   -
+  #       name: side_connetct_point
+  #       types: [HORN_X]
+  #       translation: [0.0, 0.0, 24.5]
+  #       rotation: [0.0, 1.0, 0.0, 0.0]
+  #   -
+  #       name: connect_point1
+  #       types: [FRAME_CSIDE_X]
+  #       translation: [0.0, 60.0, 26.0]
+  #       rotation: [1.0, 0.0, 0.0, 90.0]
+  #   -
+  #       name: connect_point2
+  #       types: [FRAME_CSIDE_X]
+  #       translation: [-13.5, 60.0, 26.0]
+  #       rotation: [1.0, 0.0, 0.0, 90.0]
+  #   -
+  #       name: connect_point3
+  #       types: [FRAME_CSIDE_X]
+  #       translation: [-27.0, 60.0, 26.0]
+  #       rotation: [1.0, 0.0, 0.0, 90.0]
+  #   -
+  #       name: connect_point4
+  #       types: [FRAME_CSIDE_X]
+  #       translation: [0.0, 60.0, -26.0]
+  #       rotation: [0.0, 0.7071, -0.7071, 180.0]
+  #   -
+  #       name: connect_point5
+  #       types: [FRAME_CSIDE_X]
+  #       translation: [13.5, 60.0, -26.0]
+  #       rotation: [0.0, 0.7071, -0.7071, 180.0]
+  #   -
+  #       name: connect_point6
+  #       types: [FRAME_CSIDE_X]
+  #       translation: [27.0, 60.0, -26.0]
+  #       rotation: [0.0, 0.7071, -0.7071, 180.0]
+  ###
+  -
+    type: Hinge_Short_Plug_540_c
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hinge Short ( Plug ) Center (540-540)
+    description: Short hinge frame with LEGO plugs for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/short_hone_c_540_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/short_hone_c_540_mm.obj"
+        scale : 0.001
+    mass-param:
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connetct_point1
+        types: [HORN_X]
+        translation: [0.0, 0.0, 24.5]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: hone_connetct_point2
+        types: [HORN_X]
+        translation: [0.0, 0.0, -24.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: connect_point1
+        types: [FRAME_CSIDE_X]
+        translation: [-13.5, 60.0, 41.5]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: connect_point4
+        types: [FRAME_CSIDE_X]
+        translation: [13.5, 60.0, -10.5]
+        rotation: [0.0, 0.7071, -0.7071, 180.0]
+
+  -
+    type: Hinge_Short_Plug_540_xm
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hinge Short ( Plug ) Xminus (540-540)
+    description: Short hinge frame with LEGO plugs for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/short_hone_xm_540_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/short_hone_xm_540_mm.obj"
+        scale : 0.001
+    mass-param:
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connetct_point1
+        types: [HORN_X]
+        translation: [0.0, 0.0, 24.5]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: hone_connetct_point2
+        types: [HORN_X]
+        translation: [0.0, 0.0, -24.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: connect_point1
+        types: [FRAME_CSIDE_X]
+        translation: [-30.25, 60.0, 41.5]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: connect_point2
+        types: [FRAME_CSIDE_X]
+        translation: [-3.25, 60.0, -10.5]
+        rotation: [0.0, 0.7071, -0.7071, 180.0]
+  -
+    type: Hinge_Short_Plug_540_xp
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hinge Short ( Plug ) Xplus (540-540)
+    description: Short hinge frame with LEGO plugs for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/short_hone_xp_540_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/short_hone_xp_540_mm.obj"
+        scale : 0.001
+    mass-param:
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connetct_point1
+        types: [HORN_X]
+        translation: [0.0, 0.0, 24.5]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: hone_connetct_point2
+        types: [HORN_X]
+        translation: [0.0, 0.0, -24.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: connect_point1
+        types: [FRAME_CSIDE_X]
+        translation: [3.25, 60.0, 41.5]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: connect_point2
+        types: [FRAME_CSIDE_X]
+        translation: [30.25, 60.0, -10.5]
+        rotation: [0.0, 0.7071, -0.7071, 180.0]
+  ###
+  -
+    type: Hinge_Short_Plug_540_430_c
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hinge Short ( Plug ) Center (540-430)
+    description: TODO
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/short_hone_c_540_430_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/short_hone_c_540_430_mm.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connetct_point1
+        types: [HORN_X]
+        translation: [0.0, 0.0, 24.5]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: hone_connetct_point2
+        types: [HORN_X]
+        translation: [0.0, 0.0, -24.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: connect_point1
+        types: [FRAME_CSIDE_X]
+        translation: [-11., 60.0, 32.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: connect_point2
+        types: [FRAME_CSIDE_X]
+        translation: [11., 60.0, -8]
+        rotation: [0.0, 0.7071, -0.7071, 180.0]
+
+  -
+    type: Hinge_Short_Plug_540_430_xm
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hinge Short ( Plug ) Xminus (540-430)
+    description: Short hinge frame with LEGO plugs for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/short_hone_xm_540_430_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/short_hone_xm_540_430_mm.obj"
+        scale : 0.001
+    mass-param:
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connetct_point1
+        types: [HORN_X]
+        translation: [0.0, 0.0, 24.5]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: hone_connetct_point2
+        types: [HORN_X]
+        translation: [0.0, 0.0, -24.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: connect_point1
+        types: [FRAME_CSIDE_X]
+        translation: [-27.75, 60.0, 32.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: connect_point2
+        types: [FRAME_CSIDE_X]
+        translation: [-5.75, 60.0, -8.0]
+        rotation: [0.0, 0.7071, -0.7071, 180.0]
+
+  -
+    type: Hinge_Short_Plug_540_430_xp
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hinge Short ( Plug ) Xplus (540-430)
+    description: Short hinge frame with LEGO plugs for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/short_hone_xp_540_430_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/short_hone_xp_540_430_mm.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connetct_point1
+        types: [HORN_X]
+        translation: [0.0, 0.0, 24.5]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: connect_point1
+        types: [FRAME_CSIDE_X]
+        translation: [5.75, 60.0, 32]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: hone_connetct_point2
+        types: [HORN_X]
+        translation: [0.0, 0.0, -24.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: connect_point2
+        types: [FRAME_CSIDE_X]
+        translation: [27.75, 60.0, -8]
+        rotation: [0.0, 0.7071, -0.7071, 180.0]
+
+  ###
+  -
+    type: Hinge_Short_Plug_430_430_c
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hinge Short ( Plug ) Center (430-430)
+    description: TODO
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/short_hone_c_430_430_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/short_hone_c_430_430_mm.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connetct_point1
+        types: [HORN_X]
+        translation: [0.0, 0.0, 18.5]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: hone_connetct_point2
+        types: [HORN_X]
+        translation: [0.0, 0.0, -18.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: connect_point1
+        types: [FRAME_CSIDE_X]
+        translation: [-11., 60.0, 32.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: connect_point2
+        types: [FRAME_CSIDE_X]
+        translation: [11., 60.0, -8]
+        rotation: [0.0, 0.7071, -0.7071, 180.0]
+
+  -
+    type: Hinge_Short_Plug_430_430_xm
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hinge Short ( Plug ) Xminus (430-430)
+    description: Short hinge frame with LEGO plugs for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/short_hone_xm_430_430_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/short_hone_xm_430_430_mm.obj"
+        scale : 0.001
+    mass-param:
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connetct_point1
+        types: [HORN_X]
+        translation: [0.0, 0.0, 18.5]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: hone_connetct_point2
+        types: [HORN_X]
+        translation: [0.0, 0.0, -18.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: connect_point1
+        types: [FRAME_CSIDE_X]
+        translation: [-27.75, 60.0, 32.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: connect_point2
+        types: [FRAME_CSIDE_X]
+        translation: [-5.75, 60.0, -8.0]
+        rotation: [0.0, 0.7071, -0.7071, 180.0]
+
+  -
+    type: Hinge_Short_Plug_430_430_xp
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hinge Short ( Plug ) Xplus (430-430)
+    description: Short hinge frame with LEGO plugs for X-series servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/short_hone_xp_430_430_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/short_hone_xp_430_430_mm.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connetct_point1
+        types: [HORN_X]
+        translation: [0.0, 0.0, 18.5]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: hone_connetct_point2
+        types: [HORN_X]
+        translation: [0.0, 0.0, -18.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: connect_point1
+        types: [FRAME_CSIDE_X]
+        translation: [5.75, 60.0, 32]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: connect_point2
+        types: [FRAME_CSIDE_X]
+        translation: [27.75, 60.0, -8]
+        rotation: [0.0, 0.7071, -0.7071, 180.0]
+
+  ###
+  -
+    type: Hone2Front_540
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hone2Front for XM 540
+    description: TODO
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/hone2front_540_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/hone2front_540_mm.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connect_point
+        types: [HORN_X]
+        translation: [0.0, 0.0, 24.5]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: front_connetct_point1
+        types: [M25_HOLE]
+        translation: [10.0, 8.0, 69.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point2
+        types: [M25_HOLE]
+        translation: [10.0, -8.0, 69.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point3
+        types: [M25_HOLE]
+        translation: [-10.0, 8.0, 69.5]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point4
+        types: [M25_HOLE]
+        translation: [-10.0, -8.0, 69.5]
+        rotation: [0.0,  1.0, 0.0, 180.0]
+  -
+    type: Hone2Front_430
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hone2Front for XM 430
+    description: TODO
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/hone2front_430_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/hone2front_430_mm.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connect_point
+        types: [HORN_X]
+        translation: [0.0, 0.0, 19]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: front_connetct_point1
+        types: [M25_HOLE]
+        translation: [8.0, 6.0, 64]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point2
+        types: [M25_HOLE]
+        translation: [8.0, -6.0, 64]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point3
+        types: [M25_HOLE]
+        translation: [-8.0, 6.0, 64]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point4
+        types: [M25_HOLE]
+        translation: [-8.0, -6.0, 64]
+        rotation: [0.0,  1.0, 0.0, 180.0]
+###
