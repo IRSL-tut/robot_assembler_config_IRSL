@@ -141,7 +141,7 @@ ConnectingConstraintSettings:
 PanelSettings: ## just for choreonoid
   tab_list:
     - name: Test
-      parts: [XM-540, Frame_Short_540, Hinge_Short_Plug_540_c, Hinge_Short_Plug_540_xm, Hinge_Short_Plug_540_xp, Hinge_Short_Plug_540_430_c,Hinge_Short_Plug_540_430_xm, Hinge_Short_Plug_540_430_xp, Hinge_Short_Plug_430_430_c,Hinge_Short_Plug_430_430_xm, Hinge_Short_Plug_430_430_xp,Hone2Front_540, Hone2Front_430]
+      parts: [XM-540, XM-540(w/EPX540-BR101), XL-430(w/EPX430-BR101), Frame_Short_540, Hinge_Short_Plug_540_c, Hinge_Short_Plug_540_xm, Hinge_Short_Plug_540_xp, Hinge_Short_Plug_540_430_c,Hinge_Short_Plug_540_430_xm, Hinge_Short_Plug_540_430_xp, Hinge_Short_Plug_430_430_c,Hinge_Short_Plug_430_430_xm, Hinge_Short_Plug_430_430_xp,Hone2Front_540, Hone2Front_430, Hone2Front_540_BR101, Hone2Front_430_BR101]
     - name: Servo Parts
       parts: [XL-430, Hinge_Short_Plug, Hinge_Short_Socket, Hinge_Long_Plug, Hinge_Long_Socket,  omni-shaft-x, Moveable_Finger]
     - name: Frames
@@ -20918,5 +20918,260 @@ PartsSettings:
         name: front_connetct_point4
         types: [M25_HOLE]
         translation: [-8.0, -6.0, 64]
+        rotation: [0.0,  1.0, 0.0, 180.0]
+
+  -
+    type: XM-540(w/EPX540-BR101)
+    class: Dynamixel XM-540 (w/EPX540-BR101)
+    description: Servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/XM-540_mm.stl"
+        scale : 0.001
+        color: [0.25, 0.17, 0.17]
+      -
+        type: mesh
+        url: "meshes_vis/x_series/EPX540-BR101.stl"
+        scale : 0.001
+        color: [0.25, 0.17, 0.17]
+        translation: [ 0., 0., 22 ]
+        rotation: [1, 0, 0, 90.0]
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/XM-540_mm.obj"
+        scale : 0.001
+      -
+        type: mesh
+        url: "meshes_col/x_series/EPX540-BR101.obj"
+        scale : 0.001 
+        translation: [ 0., 0., 22 ]
+        rotation: [1, 0, 0, 90.0]
+    mass-param:
+      mass: 57.0
+      center-of-mass: [0.41966054, -15.387220, -17.474305]
+      inertia-tensor: [1.5493772e+04, -1.7514579e+02, -4.8111620e+01, -1.7514579e+02, 8.2528518e+03, -8.4924409e+02, -4.8111620e+01, -8.4924409e+02, 1.3741272e+04]
+    actuators:
+      -
+        name: horn
+        types: [ROTOR_X]
+        translation: [0.0, 0.0, 29.0]
+        rotation: [1.0, 0.0, 0.0, 0.0]
+        actuator-type: rotational
+        axis: z
+        limit: [-180, 180]
+    connecting-points :
+    -
+        name: bottom-side1
+        types: [SERVO_ASIDE_X]
+        translation: [13.5, -41.5, 22.0]
+        rotation: [0.0, 0.0, 1.0, 0.0]
+    -
+        name: bottom-side2
+        types: [SERVO_CSIDE_X]
+        translation: [13.5, 10.5, -22.0]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front-side-m25hole1
+        types: [M25_HOLE]
+        translation: [10.0, -44.75, 8.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole2
+        types: [M25_HOLE]
+        translation: [10.0, -44.75, -8.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole3
+        types: [M25_HOLE]
+        translation: [-10.0, -44.75, 8.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole4
+        types: [M25_HOLE]
+        translation: [-10.0, -44.75, -8.0]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+  -
+    type: XL-430(w/EPX430-BR101)
+    class: Dynamixel XL-430(w/EPX430-BR101)
+    description: Servomotor
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/XL-430_mm.stl"
+        scale : 0.001
+        color: [0.15, 0.15, 0.15]
+      -
+        type: mesh
+        url: "meshes_vis/x_series/EPX430-BR101.stl"
+        scale : 0.001
+        color: [0.15, 0.15, 0.15]
+        translation: [ 0., 0., -2 ]
+        rotation: [1, 0, 0, 90.0]
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/XL-430_mm.obj"
+        scale : 0.001
+      -
+        type: mesh
+        url: "meshes_col/x_series/EPX430-BR101.obj"
+        scale : 0.001
+        translation: [ 0., 0., -2 ]
+        rotation: [1, 0, 0, 90.0]
+    mass-param:
+      mass: 57.0
+      center-of-mass: [0.41966054, -15.387220, -17.474305]
+      inertia-tensor: [1.5493772e+04, -1.7514579e+02, -4.8111620e+01, -1.7514579e+02, 8.2528518e+03, -8.4924409e+02, -4.8111620e+01, -8.4924409e+02, 1.3741272e+04]
+    actuators:
+      -
+        name: horn
+        types: [ROTOR_X]
+        translation: [0.0, 0.0, 3.0]
+        rotation: [1.0, 0.0, 0.0, 0.0]
+        actuator-type: rotational
+        axis: z
+        limit: [-180, 180]
+    connecting-points :
+    -
+        name: right-side
+        types: [SERVO_BSIDE_X]
+        translation: [11.0, -32.0, -2.0]
+        rotation: [0.0, 0.0, 1.0, 180.0]
+    -
+        name: left-side
+        types: [SERVO_BSIDE_X]
+        translation: [-11.0, 8.0, -2.0]
+        rotation: [1.0, 0.0, 0.0, 0.0]
+    -
+        name: bottom-side1
+        types: [SERVO_ASIDE_X]
+        translation: [-11.0, -32.0, -2.0]
+        rotation: [0.0, 0.0, 1.0, 90.0]
+    -
+        name: bottom-side2
+        types: [SERVO_BSIDE_X, SERVO_CSIDE_X]
+        translation: [11.0, 8.0, -36.0]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: bottom-side3
+        types: [SERVO_ASIDE_X]
+        translation: [11.0, -32.0, -36.0]
+        rotation: [0.707, 0.707, 0.0, 180.0]
+    -
+        name: left-side2
+        types: [SERVO_BSIDE_X, SERVO_CSIDE_X]
+        translation: [-11.0, -32.0, -36.0]
+        rotation: [1.0, 0.0, 0.0, 180.0]
+    -
+        name: front-side-m25hole1
+        types: [M25_HOLE]
+        translation: [8.0, -35.25, -13]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole2
+        types: [M25_HOLE]
+        translation: [8.0, -35.25, -25]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole3
+        types: [M25_HOLE]
+        translation: [-8.0, -35.25, -13]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+    -
+        name: front-side-m25hole4
+        types: [M25_HOLE]
+        translation: [-8.0, -35.25, -25]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+  -
+    type: Hone2Front_540_BR101
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hone2Front for XM 540 (BR101)
+    description: TODO
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/hone2front_540_br101_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/hone2front_540_br101_mm.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connect_point
+        types: [HORN_X]
+        translation: [0.0, 0.0, 29]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: front_connetct_point1
+        types: [M25_HOLE]
+        translation: [10.0, 8.0, 74]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point2
+        types: [M25_HOLE]
+        translation: [10.0, -8.0, 74]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point3
+        types: [M25_HOLE]
+        translation: [-10.0, 8.0, 74]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point4
+        types: [M25_HOLE]
+        translation: [-10.0, -8.0, 74]
+        rotation: [0.0,  1.0, 0.0, 180.0]
+  -
+    type: Hone2Front_430_BR101
+    # print-file: "servo_parts_x_series/fr12_h101_plug_mm.stl"
+    class: Hone2Front for XM 430 (BR101)
+    description: TODO
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/x_series/hone2front_430_br101_mm.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/x_series/hone2front_430_br101_mm.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connect_point
+        types: [HORN_X]
+        translation: [0.0, 0.0, 23]
+        rotation: [0.0, 1.0, 0.0, 0.0]
+    -
+        name: front_connetct_point1
+        types: [M25_HOLE]
+        translation: [8.0, 6.0, 68]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point2
+        types: [M25_HOLE]
+        translation: [8.0, -6.0, 68]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point3
+        types: [M25_HOLE]
+        translation: [-8.0, 6.0, 68]
+        rotation: [0.0, 1.0, 0.0, 180.0]
+    -
+        name: front_connetct_point4
+        types: [M25_HOLE]
+        translation: [-8.0, -6.0, 68]
         rotation: [0.0,  1.0, 0.0, 180.0]
 ###
