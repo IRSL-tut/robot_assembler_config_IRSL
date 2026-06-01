@@ -141,7 +141,7 @@ ConnectingConstraintSettings:
 PanelSettings: ## just for choreonoid
   tab_list:
     - name: Test
-      parts: [XM-540, XM-540(w/EPX540-BR101), XL-430(w/EPX430-BR101), Frame_Short_540, Hinge_Short_Plug_540_c, Hinge_Short_Plug_540_xm, Hinge_Short_Plug_540_xp, Hinge_Short_Plug_540_430_c,Hinge_Short_Plug_540_430_xm, Hinge_Short_Plug_540_430_xp, Hinge_Short_Plug_430_430_c,Hinge_Short_Plug_430_430_xm, Hinge_Short_Plug_430_430_xp,Hone2Front_540, Hone2Front_430, Hone2Front_540_BR101, Hone2Front_430_BR101]
+      parts: [XM-540, XM-540(w/EPX540-BR101), XL-430(w/EPX430-BR101), Frame_Short_540, Hinge_Short_Plug_540_c, Hinge_Short_Plug_540_xm, Hinge_Short_Plug_540_xp, Hinge_Short_Plug_540_430_c,Hinge_Short_Plug_540_430_xm, Hinge_Short_Plug_540_430_xp, Hinge_Short_Plug_430_430_c,Hinge_Short_Plug_430_430_xm, Hinge_Short_Plug_430_430_xp,Hone2Front_540, Hone2Front_430, Hone2Front_540_BR101, Hone2Front_430_BR101, Hand_parts_01, Hand_parts_02, Camera_parts]
     - name: Servo Parts
       parts: [XL-430, Hinge_Short_Plug, Hinge_Short_Socket, Hinge_Long_Plug, Hinge_Long_Socket,  omni-shaft-x, Moveable_Finger]
     - name: Frames
@@ -21174,4 +21174,91 @@ PartsSettings:
         types: [M25_HOLE]
         translation: [-8.0, -6.0, 68]
         rotation: [0.0,  1.0, 0.0, 180.0]
+  -
+    type: Hand_parts_01
+    class: Hand Parts 01
+    description: TODO
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/hand_parts_01.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/hand_parts_01.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: hone_connect_point
+        types: [HORN_X]
+        translation: [0.0, 0.0, 0.]
+        rotation: [0., 0.70710678118655, 0.70710678118655 ,180]
+  -
+    type: Hand_parts_02
+    class: Hand Parts 02
+    description: TODO
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/hand_parts_02.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/hand_parts_02.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: m25_hole_connect_point1
+        types: [M25_HOLE]
+        translation: [0, 3.0, 0.]
+        rotation: [0., 0.70710678118655, -0.70710678118655 , 180]
+        # rotation: [0., 1, 0 , 0]
+    -
+        name: m25_hole_connect_point2
+        types: [M25_HOLE]
+        translation: [0, 0.0, 0.]
+        rotation: [0., 0.70710678118655, -0.70710678118655 , 180]
+        # rotation: [0., 1, 0 , 0]
+
+  -
+    type: Camera_parts
+    class: Camera Parts
+    description: TODO
+    visual:
+      -
+        type: mesh
+        url: "meshes_vis/camera_parts.stl"
+        scale : 0.001
+    collision:
+      -
+        type: mesh
+        url: "meshes_col/camera_parts.obj"
+        scale : 0.001
+    mass-param: # TODO
+      mass: 14.395
+      center-of-mass: [4.299E-07, 23.033, 0.00]
+      inertia-tensor: [2187.983, 3.347E-05, 6.339E-09, 3.347E-05, 4457.942, 7.402E-09, 6.339E-09, 7.402E-09, 4839.383]
+    connecting-points :
+    -
+        name: m25_hole_connect_point1
+        types: [M25_HOLE]
+        translation: [0, 3.0, 0.]
+        rotation: [0., 0.70710678118655, -0.70710678118655 , 180]
+        # rotation: [0., 1, 0 , 0]
+    # -
+    #     name: m25_hole_connect_point2
+    #     types: [M25_HOLE]
+    #     translation: [0, 0.0, 0.]
+    #     rotation: [0., 0.70710678118655, -0.70710678118655 , 180]
+    #     # rotation: [0., 1, 0 , 0]
 ###
