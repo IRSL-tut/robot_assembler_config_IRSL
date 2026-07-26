@@ -16,7 +16,12 @@ GeneralSettings:
 ##   connecting-type-match-list:
 ##   connecting-configuration-list:
 ConnectingConstraintSettings:
-  connecting-type-list: [PC1, PC2, PC4, SC1, SC2, SC4, HORN, HORN-F2, HORN-F4, SERVO_SIDE, FRAME_F3_SERVO, FRAME, LEGO-2P, LEGO-2S, WHEEL_SHAFT, OMNI_WHEEL, HORN_X, ROTOR_X, SERVO_ASIDE_X, FRAME_ASIDE_X, SERVO_BSIDE_X, FRAME_BSIDE_X, SERVO_CSIDE_X, FRAME_CSIDE_X, GROVE_SENSOR, GROVE_MOUNTER, M2_HOLE]
+  connecting-type-list: [PC1, PC2, PC4, SC1, SC2, SC4,
+                         HORN, HORN-F2, HORN-F4,
+                         SERVO_SIDE, FRAME_F3_SERVO, FRAME, LEGO-2P, LEGO-2S,
+                         WHEEL_SHAFT, OMNI_WHEEL, HORN_X, ROTOR_X,
+                         SERVO_ASIDE_X, FRAME_ASIDE_X, SERVO_BSIDE_X, FRAME_BSIDE_X,
+                         SERVO_CSIDE_X, FRAME_CSIDE_X, GROVE_SENSOR, GROVE_MOUNTER, M2_HOLE]
   ## pair: [a, b] ## configuration represents transoform from a to b
   connecting-type-match-list:
     -
