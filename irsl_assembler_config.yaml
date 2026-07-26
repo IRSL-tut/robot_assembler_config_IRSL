@@ -26,19 +26,19 @@ ConnectingConstraintSettings:
   connecting-type-match-list:
     -
       pair: [PC1, SC1]
-      allowed-configuration: [fixed, invert, rotate-90, rotate90]
+      allowed-configuration: [fixed, flip-z, rotate-90, rotate90]
     -
       pair: [PC2, SC2]
-      allowed-configuration: [fixed, invert]
+      allowed-configuration: [fixed, flip-z]
     -
       pair: [PC4, SC4]
-      allowed-configuration: [fixed, invert, rotate-90, rotate90]
+      allowed-configuration: [fixed, flip-z, rotate-90, rotate90]
     -
       pair: [HORN, HORN-F2]
       allowed-configuration: [fixed, rotate-90, rotate90]
     -
       pair: [HORN, HORN-F4]
-      allowed-configuration: [fixed, invert, rotate-90, rotate90]
+      allowed-configuration: [fixed, flip-z, rotate-90, rotate90]
     -
       pair: [SERVO_SIDE, FRAME_F3_SERVO]
       allowed-configuration: [fixed]
@@ -47,10 +47,10 @@ ConnectingConstraintSettings:
       allowed-configuration: [flip-y, flip-rotate90, flip-x, flip-rotate-90]
     -
       pair: [FRAME, HORN]
-      allowed-configuration: [fixed, invert, rotate-90, rotate90]
+      allowed-configuration: [fixed, flip-z, rotate-90, rotate90]
     -
       pair: [LEGO-2P, LEGO-2S]
-      allowed-configuration: [fixed, invert]
+      allowed-configuration: [fixed, flip-z]
     -
       pair: [WHEEL_SHAFT, OMNI_WHEEL]
       allowed-configuration: [fixed]
@@ -65,13 +65,13 @@ ConnectingConstraintSettings:
       allowed-configuration: [fixed]
     -
       pair: [ROTOR_X, HORN_X]
-      allowed-configuration: [fixed, invert, rotate-90, rotate90]
+      allowed-configuration: [fixed, flip-z, rotate-90, rotate90]
     -
       pair: [GROVE_SENSOR, GROVE_MOUNTER]
-      allowed-configuration: [fixed, invert]
+      allowed-configuration: [fixed, flip-z]
     -
       pair: [M2_HOLE, M2_HOLE]
-      allowed-configuration: [fixed, invert, rotate-90, rotate90]
+      allowed-configuration: [fixed, flip-z, rotate-90, rotate90]
   ##
   connecting-configuration-list:
     -
@@ -79,7 +79,7 @@ ConnectingConstraintSettings:
       description: 'fixed with same coords'
       #rotation: []
     -
-      name: invert
+      name: flip-z # invert
       description: 'rotate 180[deg] around z-axis'
       rotation: [0, 0, 1, 180]
     -
